@@ -1,17 +1,52 @@
 [
   {
+    "filename": "IMG_0213 2.JPG",
     "source_name": "IMG_0213 2.JPG",
+    "repo_path": "assets/photo-library/img-0213-2.jpg",
     "file": "assets/photo-library/img-0213-2.jpg",
     "variants": [
-      "assets/photo-library/img-0213-2-400w.webp",
-      "assets/photo-library/img-0213-2-400w.jpg",
-      "assets/photo-library/img-0213-2-800w.webp",
-      "assets/photo-library/img-0213-2-800w.jpg",
-      "assets/photo-library/img-0213-2-1200w.webp",
-      "assets/photo-library/img-0213-2-1200w.jpg",
-      "assets/photo-library/img-0213-2-1600w.webp",
-      "assets/photo-library/img-0213-2-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-0213-2-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-2-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -21,18 +56,53 @@
     "order": 1
   },
   {
+    "filename": "IMG_1792.JPG",
     "source_name": "IMG_1792.JPG",
+    "repo_path": "assets/photo-library/img-1792.jpg",
     "file": "assets/photo-library/img-1792.jpg",
     "variants": [
-      "assets/photo-library/img-1792-400w.webp",
-      "assets/photo-library/img-1792-400w.jpg",
-      "assets/photo-library/img-1792-800w.webp",
-      "assets/photo-library/img-1792-800w.jpg",
-      "assets/photo-library/img-1792-1200w.webp",
-      "assets/photo-library/img-1792-1200w.jpg",
-      "assets/photo-library/img-1792-1600w.webp",
-      "assets/photo-library/img-1792-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-1792-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1792-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1792-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1792-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1792-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1792-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1792-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1792-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -42,18 +112,53 @@
     "order": 2
   },
   {
+    "filename": "IMG_1796.JPG",
     "source_name": "IMG_1796.JPG",
+    "repo_path": "assets/photo-library/img-1796.jpg",
     "file": "assets/photo-library/img-1796.jpg",
     "variants": [
-      "assets/photo-library/img-1796-400w.webp",
-      "assets/photo-library/img-1796-400w.jpg",
-      "assets/photo-library/img-1796-800w.webp",
-      "assets/photo-library/img-1796-800w.jpg",
-      "assets/photo-library/img-1796-1200w.webp",
-      "assets/photo-library/img-1796-1200w.jpg",
-      "assets/photo-library/img-1796-1600w.webp",
-      "assets/photo-library/img-1796-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-1796-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1796-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1796-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1796-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1796-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1796-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1796-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1796-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -63,18 +168,53 @@
     "order": 3
   },
   {
-    "source_name": "IMG_2109.JPG",
-    "file": "assets/photo-library/img-2109.jpg",
+    "filename": "IMG_1877.JPG",
+    "source_name": "IMG_1877.JPG",
+    "repo_path": "assets/photo-library/img-1877.jpg",
+    "file": "assets/photo-library/img-1877.jpg",
     "variants": [
-      "assets/photo-library/img-2109-400w.webp",
-      "assets/photo-library/img-2109-400w.jpg",
-      "assets/photo-library/img-2109-800w.webp",
-      "assets/photo-library/img-2109-800w.jpg",
-      "assets/photo-library/img-2109-1200w.webp",
-      "assets/photo-library/img-2109-1200w.jpg",
-      "assets/photo-library/img-2109-1600w.webp",
-      "assets/photo-library/img-2109-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-1877-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1877-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1877-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1877-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1877-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1877-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-1877-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-1877-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -84,18 +224,53 @@
     "order": 4
   },
   {
-    "source_name": "IMG_2111.JPG",
-    "file": "assets/photo-library/img-2111.jpg",
+    "filename": "IMG_2109.JPG",
+    "source_name": "IMG_2109.JPG",
+    "repo_path": "assets/photo-library/img-2109.jpg",
+    "file": "assets/photo-library/img-2109.jpg",
     "variants": [
-      "assets/photo-library/img-2111-400w.webp",
-      "assets/photo-library/img-2111-400w.jpg",
-      "assets/photo-library/img-2111-800w.webp",
-      "assets/photo-library/img-2111-800w.jpg",
-      "assets/photo-library/img-2111-1200w.webp",
-      "assets/photo-library/img-2111-1200w.jpg",
-      "assets/photo-library/img-2111-1600w.webp",
-      "assets/photo-library/img-2111-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2109-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2109-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2109-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2109-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2109-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2109-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2109-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2109-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -105,18 +280,53 @@
     "order": 5
   },
   {
-    "source_name": "IMG_2182.JPG",
-    "file": "assets/photo-library/img-2182.jpg",
+    "filename": "IMG_2111.JPG",
+    "source_name": "IMG_2111.JPG",
+    "repo_path": "assets/photo-library/img-2111.jpg",
+    "file": "assets/photo-library/img-2111.jpg",
     "variants": [
-      "assets/photo-library/img-2182-400w.webp",
-      "assets/photo-library/img-2182-400w.jpg",
-      "assets/photo-library/img-2182-800w.webp",
-      "assets/photo-library/img-2182-800w.jpg",
-      "assets/photo-library/img-2182-1200w.webp",
-      "assets/photo-library/img-2182-1200w.jpg",
-      "assets/photo-library/img-2182-1600w.webp",
-      "assets/photo-library/img-2182-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2111-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2111-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2111-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2111-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2111-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2111-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2111-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2111-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -126,18 +336,53 @@
     "order": 6
   },
   {
-    "source_name": "IMG_2331.JPG",
-    "file": "assets/photo-library/img-2331.jpg",
+    "filename": "IMG_2122 2.JPG",
+    "source_name": "IMG_2122 2.JPG",
+    "repo_path": "assets/photo-library/img-2122-2.jpg",
+    "file": "assets/photo-library/img-2122-2.jpg",
     "variants": [
-      "assets/photo-library/img-2331-400w.webp",
-      "assets/photo-library/img-2331-400w.jpg",
-      "assets/photo-library/img-2331-800w.webp",
-      "assets/photo-library/img-2331-800w.jpg",
-      "assets/photo-library/img-2331-1200w.webp",
-      "assets/photo-library/img-2331-1200w.jpg",
-      "assets/photo-library/img-2331-1600w.webp",
-      "assets/photo-library/img-2331-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2122-2-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-2-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -147,18 +392,53 @@
     "order": 7
   },
   {
-    "source_name": "IMG_2429.JPG",
-    "file": "assets/photo-library/img-2429.jpg",
+    "filename": "IMG_2182.JPG",
+    "source_name": "IMG_2182.JPG",
+    "repo_path": "assets/photo-library/img-2182.jpg",
+    "file": "assets/photo-library/img-2182.jpg",
     "variants": [
-      "assets/photo-library/img-2429-400w.webp",
-      "assets/photo-library/img-2429-400w.jpg",
-      "assets/photo-library/img-2429-800w.webp",
-      "assets/photo-library/img-2429-800w.jpg",
-      "assets/photo-library/img-2429-1200w.webp",
-      "assets/photo-library/img-2429-1200w.jpg",
-      "assets/photo-library/img-2429-1600w.webp",
-      "assets/photo-library/img-2429-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2182-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2182-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2182-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2182-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2182-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2182-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2182-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2182-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -168,18 +448,53 @@
     "order": 8
   },
   {
-    "source_name": "IMG_2433.JPG",
-    "file": "assets/photo-library/img-2433.jpg",
+    "filename": "IMG_2331.JPG",
+    "source_name": "IMG_2331.JPG",
+    "repo_path": "assets/photo-library/img-2331.jpg",
+    "file": "assets/photo-library/img-2331.jpg",
     "variants": [
-      "assets/photo-library/img-2433-400w.webp",
-      "assets/photo-library/img-2433-400w.jpg",
-      "assets/photo-library/img-2433-800w.webp",
-      "assets/photo-library/img-2433-800w.jpg",
-      "assets/photo-library/img-2433-1200w.webp",
-      "assets/photo-library/img-2433-1200w.jpg",
-      "assets/photo-library/img-2433-1600w.webp",
-      "assets/photo-library/img-2433-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2331-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2331-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2331-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2331-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2331-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2331-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2331-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2331-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -189,18 +504,53 @@
     "order": 9
   },
   {
-    "source_name": "IMG_2781.JPG",
-    "file": "assets/photo-library/img-2781.jpg",
+    "filename": "IMG_2429.JPG",
+    "source_name": "IMG_2429.JPG",
+    "repo_path": "assets/photo-library/img-2429.jpg",
+    "file": "assets/photo-library/img-2429.jpg",
     "variants": [
-      "assets/photo-library/img-2781-400w.webp",
-      "assets/photo-library/img-2781-400w.jpg",
-      "assets/photo-library/img-2781-800w.webp",
-      "assets/photo-library/img-2781-800w.jpg",
-      "assets/photo-library/img-2781-1200w.webp",
-      "assets/photo-library/img-2781-1200w.jpg",
-      "assets/photo-library/img-2781-1600w.webp",
-      "assets/photo-library/img-2781-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2429-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2429-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2429-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2429-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2429-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2429-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2429-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2429-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -210,18 +560,53 @@
     "order": 10
   },
   {
-    "source_name": "IMG_3672.JPG",
-    "file": "assets/photo-library/img-3672.jpg",
+    "filename": "IMG_2433.JPG",
+    "source_name": "IMG_2433.JPG",
+    "repo_path": "assets/photo-library/img-2433.jpg",
+    "file": "assets/photo-library/img-2433.jpg",
     "variants": [
-      "assets/photo-library/img-3672-400w.webp",
-      "assets/photo-library/img-3672-400w.jpg",
-      "assets/photo-library/img-3672-800w.webp",
-      "assets/photo-library/img-3672-800w.jpg",
-      "assets/photo-library/img-3672-1200w.webp",
-      "assets/photo-library/img-3672-1200w.jpg",
-      "assets/photo-library/img-3672-1600w.webp",
-      "assets/photo-library/img-3672-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2433-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2433-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2433-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2433-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2433-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2433-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2433-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2433-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -231,18 +616,53 @@
     "order": 11
   },
   {
-    "source_name": "IMG_4045.JPG",
-    "file": "assets/photo-library/img-4045.jpg",
+    "filename": "IMG_2781.JPG",
+    "source_name": "IMG_2781.JPG",
+    "repo_path": "assets/photo-library/img-2781.jpg",
+    "file": "assets/photo-library/img-2781.jpg",
     "variants": [
-      "assets/photo-library/img-4045-400w.webp",
-      "assets/photo-library/img-4045-400w.jpg",
-      "assets/photo-library/img-4045-800w.webp",
-      "assets/photo-library/img-4045-800w.jpg",
-      "assets/photo-library/img-4045-1200w.webp",
-      "assets/photo-library/img-4045-1200w.jpg",
-      "assets/photo-library/img-4045-1600w.webp",
-      "assets/photo-library/img-4045-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2781-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2781-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2781-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2781-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2781-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2781-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2781-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2781-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -252,18 +672,53 @@
     "order": 12
   },
   {
-    "source_name": "IMG_4046.JPG",
-    "file": "assets/photo-library/img-4046.jpg",
+    "filename": "IMG_2782.JPG",
+    "source_name": "IMG_2782.JPG",
+    "repo_path": "assets/photo-library/img-2782.jpg",
+    "file": "assets/photo-library/img-2782.jpg",
     "variants": [
-      "assets/photo-library/img-4046-400w.webp",
-      "assets/photo-library/img-4046-400w.jpg",
-      "assets/photo-library/img-4046-800w.webp",
-      "assets/photo-library/img-4046-800w.jpg",
-      "assets/photo-library/img-4046-1200w.webp",
-      "assets/photo-library/img-4046-1200w.jpg",
-      "assets/photo-library/img-4046-1600w.webp",
-      "assets/photo-library/img-4046-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-2782-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2782-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2782-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2782-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2782-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2782-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2782-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2782-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -273,18 +728,53 @@
     "order": 13
   },
   {
-    "source_name": "IMG_4191.JPG",
-    "file": "assets/photo-library/img-4191.jpg",
+    "filename": "IMG_3664.JPG",
+    "source_name": "IMG_3664.JPG",
+    "repo_path": "assets/photo-library/img-3664.jpg",
+    "file": "assets/photo-library/img-3664.jpg",
     "variants": [
-      "assets/photo-library/img-4191-400w.webp",
-      "assets/photo-library/img-4191-400w.jpg",
-      "assets/photo-library/img-4191-800w.webp",
-      "assets/photo-library/img-4191-800w.jpg",
-      "assets/photo-library/img-4191-1200w.webp",
-      "assets/photo-library/img-4191-1200w.jpg",
-      "assets/photo-library/img-4191-1600w.webp",
-      "assets/photo-library/img-4191-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-3664-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3664-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3664-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3664-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3664-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3664-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3664-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3664-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -294,18 +784,53 @@
     "order": 14
   },
   {
-    "source_name": "IMG_1877.JPG",
-    "file": "assets/photo-library/img-1877.jpg",
+    "filename": "IMG_3672.JPG",
+    "source_name": "IMG_3672.JPG",
+    "repo_path": "assets/photo-library/img-3672.jpg",
+    "file": "assets/photo-library/img-3672.jpg",
     "variants": [
-      "assets/photo-library/img-1877-400w.webp",
-      "assets/photo-library/img-1877-400w.jpg",
-      "assets/photo-library/img-1877-800w.webp",
-      "assets/photo-library/img-1877-800w.jpg",
-      "assets/photo-library/img-1877-1200w.webp",
-      "assets/photo-library/img-1877-1200w.jpg",
-      "assets/photo-library/img-1877-1600w.webp",
-      "assets/photo-library/img-1877-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-3672-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3672-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3672-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3672-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3672-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3672-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3672-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3672-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -315,18 +840,53 @@
     "order": 15
   },
   {
-    "source_name": "IMG_2122 2.JPG",
-    "file": "assets/photo-library/img-2122-2.jpg",
+    "filename": "IMG_4045.JPG",
+    "source_name": "IMG_4045.JPG",
+    "repo_path": "assets/photo-library/img-4045.jpg",
+    "file": "assets/photo-library/img-4045.jpg",
     "variants": [
-      "assets/photo-library/img-2122-2-400w.webp",
-      "assets/photo-library/img-2122-2-400w.jpg",
-      "assets/photo-library/img-2122-2-800w.webp",
-      "assets/photo-library/img-2122-2-800w.jpg",
-      "assets/photo-library/img-2122-2-1200w.webp",
-      "assets/photo-library/img-2122-2-1200w.jpg",
-      "assets/photo-library/img-2122-2-1600w.webp",
-      "assets/photo-library/img-2122-2-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-4045-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4045-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4045-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4045-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4045-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4045-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4045-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4045-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -336,18 +896,53 @@
     "order": 16
   },
   {
-    "source_name": "IMG_2782.JPG",
-    "file": "assets/photo-library/img-2782.jpg",
+    "filename": "IMG_4046.JPG",
+    "source_name": "IMG_4046.JPG",
+    "repo_path": "assets/photo-library/img-4046.jpg",
+    "file": "assets/photo-library/img-4046.jpg",
     "variants": [
-      "assets/photo-library/img-2782-400w.webp",
-      "assets/photo-library/img-2782-400w.jpg",
-      "assets/photo-library/img-2782-800w.webp",
-      "assets/photo-library/img-2782-800w.jpg",
-      "assets/photo-library/img-2782-1200w.webp",
-      "assets/photo-library/img-2782-1200w.jpg",
-      "assets/photo-library/img-2782-1600w.webp",
-      "assets/photo-library/img-2782-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-4046-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4046-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4046-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4046-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4046-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4046-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4046-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4046-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
@@ -357,18 +952,53 @@
     "order": 17
   },
   {
-    "source_name": "IMG_3664.JPG",
-    "file": "assets/photo-library/img-3664.jpg",
+    "filename": "IMG_4191.JPG",
+    "source_name": "IMG_4191.JPG",
+    "repo_path": "assets/photo-library/img-4191.jpg",
+    "file": "assets/photo-library/img-4191.jpg",
     "variants": [
-      "assets/photo-library/img-3664-400w.webp",
-      "assets/photo-library/img-3664-400w.jpg",
-      "assets/photo-library/img-3664-800w.webp",
-      "assets/photo-library/img-3664-800w.jpg",
-      "assets/photo-library/img-3664-1200w.webp",
-      "assets/photo-library/img-3664-1200w.jpg",
-      "assets/photo-library/img-3664-1600w.webp",
-      "assets/photo-library/img-3664-1600w.jpg"
+      {
+        "src": "assets/photo-library/img-4191-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4191-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4191-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4191-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4191-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4191-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4191-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4191-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
     ],
+    "unplaced": true,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": null,
