@@ -1,0 +1,23 @@
+# secrets / local state — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+05_STATE/
+*.sqlite
+*.db
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# os / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
