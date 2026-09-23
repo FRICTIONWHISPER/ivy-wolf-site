@@ -388,76 +388,10 @@
       <h2 class="display">The Collections</h2>
     </div>
 
-    <!-- Plate 01 — Bahamas -->
-    <div class="plate">
-      <div class="plate-img">
-        <img
-          src="assets/photo-library/img-1792-800w.jpg"
-          srcset="assets/photo-library/img-1792-400w.webp 400w,
-                  assets/photo-library/img-1792-800w.webp 800w,
-                  assets/photo-library/img-1792-1200w.webp 1200w"
-          sizes="(max-width:768px) 100vw, 50vw"
-          alt="Place photograph"
-          onerror="this.style.display='none';this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
-        >
-        <div class="plate-placeholder" style="display:none;">
-          <div class="pending-rule"></div><span>Photograph pending</span>
-        </div>
-      </div>
-      <div class="plate-body">
-        <p class="plate-eyebrow">Collection 01</p>
-        <h3 class="plate-title display">Bahamas</h3>
-        <p class="plate-status">Five works planned</p>
-        <p class="plate-credit">PLACE PHOTOGRAPH</p>
-      </div>
-    </div>
-
-    <!-- Plate 02 — Austin, Texas (reverse) -->
-    <div class="plate reverse">
-      <div class="plate-img">
-        <!-- photograph withheld: the available file is a Bahamas photograph and this plate is not the Bahamas. A caption must not lie about a place. -->
-        <div class="plate-placeholder" style="display:flex;">
-          <div class="pending-rule"></div><span>Photograph pending</span>
-        </div>
-      </div>
-      <div class="plate-body">
-        <p class="plate-eyebrow">Collection 02</p>
-        <h3 class="plate-title display">Austin, Texas</h3>
-        <p class="plate-status">One work complete</p>
-        <p class="plate-credit">PLACE PHOTOGRAPH</p>
-      </div>
-    </div>
-
-    <!-- Plate 03 — Sedona, Arizona -->
-    <div class="plate">
-      <div class="plate-img">
-        <!-- photograph withheld: the available file is a Bahamas photograph and this plate is not the Bahamas. A caption must not lie about a place. -->
-        <div class="plate-placeholder" style="display:flex;">
-          <div class="pending-rule"></div><span>Photograph pending</span>
-        </div>
-      </div>
-      <div class="plate-body">
-        <p class="plate-eyebrow">Collection 03</p>
-        <h3 class="plate-title display">Sedona, Arizona</h3>
-        <p class="plate-status">Four works planned</p>
-        <p class="plate-credit">PLACE PHOTOGRAPH</p>
-      </div>
-    </div>
-
-    <!-- Plate 04 — Telluride, Colorado (no 4th manifest photo; placeholder) -->
-    <div class="plate reverse">
-      <div class="plate-img">
-        <div class="plate-placeholder" style="display:flex;">
-          <div class="pending-rule"></div><span>Photograph pending</span>
-        </div>
-      </div>
-      <div class="plate-body">
-        <p class="plate-eyebrow">Collection 04</p>
-        <h3 class="plate-title display">Telluride, Colorado</h3>
-        <p class="plate-status">Coming soon</p>
-        <p class="plate-credit">No photograph on file &mdash; image pending</p>
-      </div>
-    </div>
+    <!-- PLATES — built from photo-manifest.json + collections.json.
+         NEVER hardcoded: a collection appears the moment a photograph is
+         labelled into it, and stays an honest placeholder until then. -->
+    <div id="collection-plates"></div>
   </section><!-- /collections -->
 
   <!-- 5 · PHOTO GALLERY — reads photo-manifest.json via JS, never hardcoded markup -->
@@ -651,6 +585,90 @@
         .catch(function () {
           grid.innerHTML = '<p style="text-align:center;color:var(--muted-dark);font-size:.8125rem;">Gallery loading&hellip;</p>';
         });
+    }());
+  </script>
+
+
+  <!-- COLLECTION PLATES — one source of truth: the manifest -->
+  <script>
+    (function () {
+      var mount = document.getElementById('collection-plates');
+      if (!mount) return;
+      var HERO = 'img-2122.jpg';
+
+      Promise.all([
+        fetch('assets/photo-library/photo-manifest.json').then(function (r) { return r.json(); }),
+        fetch('assets/photo-library/collections.json')
+          .then(function (r) { return r.ok ? r.json() : []; })
+          .catch(function () { return []; })
+      ]).then(function (res) {
+        var photos = Array.isArray(res[0]) ? res[0] : (res[0].photos || []);
+        var roster = Array.isArray(res[1]) ? res[1] : (res[1].collections || []);
+
+        // group the labelled photographs by collection
+        var byCollection = {};
+        photos.forEach(function (p) {
+          if (!p.collection) return;
+          (byCollection[p.collection] = byCollection[p.collection] || []).push(p);
+        });
+
+        // roster first, in the order the PIC set it; then any collection the
+        // manifest knows about that the roster has not caught up with
+        var names = roster.slice();
+        Object.keys(byCollection).forEach(function (n) {
+          if (names.indexOf(n) === -1) names.push(n);
+        });
+        if (!names.length) names = Object.keys(byCollection);
+
+        var html = '';
+        names.forEach(function (name, i) {
+          var list = byCollection[name] || [];
+          var lead = null;
+          for (var j = 0; j < list.length; j++) {
+            if (String(list[j].repo_path || '').indexOf(HERO) === -1) { lead = list[j]; break; }
+          }
+          if (!lead && list.length) lead = list[0];
+
+          var num = String(i + 1);
+          if (num.length < 2) num = '0' + num;
+          var count = list.length;
+          var works = count === 0 ? 'Photographs pending'
+                    : count === 1 ? 'One photograph' : count + ' photographs';
+
+          var imgHtml;
+          if (lead) {
+            var fb = null, srcset = [];
+            (lead.variants || []).forEach(function (v) {
+              if (v.fmt === 'jpeg' && v.width === 800) fb = v.src;
+              if (v.fmt === 'webp') srcset.push(v.src + ' ' + v.width + 'w');
+            });
+            var src = fb || lead.repo_path;
+            imgHtml = '<img src="' + src + '"'
+                    + (srcset.length ? ' srcset="' + srcset.join(', ') + '" sizes="(max-width:768px) 100vw, 50vw"' : '')
+                    + ' alt="' + (lead.location || name) + '" loading="lazy">';
+          } else {
+            imgHtml = '<div class="plate-placeholder" style="display:flex;">'
+                    + '<div class="pending-rule"></div><span>Photograph pending</span></div>';
+          }
+
+          var caption = lead ? (lead.location || '') : 'No photograph on file — image pending';
+
+          html += '<div class="plate' + (i % 2 ? ' reverse' : '') + '">'
+                +   '<div class="plate-img">' + imgHtml + '</div>'
+                +   '<div class="plate-text">'
+                +     '<span class="accent-rule"></span>'
+                +     '<p class="plate-eyebrow">Collection ' + num + '</p>'
+                +     '<h3 class="plate-title display">' + name + '</h3>'
+                +     '<p class="plate-works">' + works + '</p>'
+                +     '<p class="plate-credit">' + caption + '</p>'
+                +   '</div>'
+                + '</div>';
+        });
+        mount.innerHTML = html;
+      }).catch(function () {
+        mount.innerHTML = '<p style="text-align:center;color:var(--muted-dark);'
+                        + 'font-size:.8125rem;">Collections loading&hellip;</p>';
+      });
     }());
   </script>
 

@@ -1058,7 +1058,7 @@
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
     "collection": "Austin, Texas",
-    "location": "New Braunfels River, San Marcos, Austin, Texas",
+    "location": "New Braunfels, Austin, Texas",
     "credit": null,
     "alt": null,
     "order": 19
@@ -1558,11 +1558,11 @@
         "fmt": "jpeg"
       }
     ],
-    "unplaced": true,
+    "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": null,
-    "location": null,
+    "collection": "Sedona, Arizona",
+    "location": "Over the skies between Scottsdale and Sedona, Arizona",
     "credit": null,
     "alt": null,
     "order": 28
@@ -1614,11 +1614,11 @@
         "fmt": "jpeg"
       }
     ],
-    "unplaced": true,
+    "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": null,
-    "location": null,
+    "collection": "Sedona, Arizona",
+    "location": "Over the skies between Scottsdale and Sedona, Arizona",
     "credit": null,
     "alt": null,
     "order": 29
@@ -1726,11 +1726,11 @@
         "fmt": "jpeg"
       }
     ],
-    "unplaced": true,
+    "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": null,
-    "location": null,
+    "collection": "San Blas Islands, Panama",
+    "location": "San Blas Islands, Panama",
     "credit": null,
     "alt": null,
     "order": 31
