@@ -1006,5 +1006,733 @@
     "credit": null,
     "alt": null,
     "order": 18
+  },
+  {
+    "filename": "8D37FD7B-A390-447C-8246-9540122912E4.JPG",
+    "source_name": "8D37FD7B-A390-447C-8246-9540122912E4.JPG",
+    "repo_path": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4.jpg",
+    "file": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/8d37fd7b-a390-447c-8246-9540122912e4-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Austin, Texas",
+    "location": "New Braunfels River, San Marcos, Austin, Texas",
+    "credit": null,
+    "alt": null,
+    "order": 19
+  },
+  {
+    "filename": "IMG_0213.JPG",
+    "source_name": "IMG_0213.JPG",
+    "repo_path": "assets/photo-library/img-0213.jpg",
+    "file": "assets/photo-library/img-0213.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-0213-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0213-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0213-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Austin, Texas",
+    "location": "Lake Travis, from the air",
+    "credit": null,
+    "alt": null,
+    "order": 20
+  },
+  {
+    "filename": "IMG_0337.JPG",
+    "source_name": "IMG_0337.JPG",
+    "repo_path": "assets/photo-library/img-0337.jpg",
+    "file": "assets/photo-library/img-0337.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-0337-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0337-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0337-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0337-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0337-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0337-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0337-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0337-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Austin, Texas",
+    "location": "Over Skies of Austin",
+    "credit": null,
+    "alt": null,
+    "order": 21
+  },
+  {
+    "filename": "IMG_0342.JPG",
+    "source_name": "IMG_0342.JPG",
+    "repo_path": "assets/photo-library/img-0342.jpg",
+    "file": "assets/photo-library/img-0342.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-0342-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0342-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0342-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0342-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0342-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0342-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-0342-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-0342-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Austin, Texas",
+    "location": "Over Skies of Austin",
+    "credit": null,
+    "alt": null,
+    "order": 22
+  },
+  {
+    "filename": "IMG_2122.JPG",
+    "source_name": "IMG_2122.JPG",
+    "repo_path": "assets/photo-library/img-2122.jpg",
+    "file": "assets/photo-library/img-2122.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-2122-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-2122-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-2122-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "The Bahamas",
+    "location": "San Salvador, Bahamas",
+    "credit": null,
+    "alt": null,
+    "order": 23
+  },
+  {
+    "filename": "IMG_3178.JPG",
+    "source_name": "IMG_3178.JPG",
+    "repo_path": "assets/photo-library/img-3178.jpg",
+    "file": "assets/photo-library/img-3178.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-3178-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3178-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3178-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3178-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3178-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3178-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-3178-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-3178-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Puerto Lopez, Ecuador",
+    "location": "Puerto Lopez, Ecuador",
+    "credit": null,
+    "alt": null,
+    "order": 24
+  },
+  {
+    "filename": "IMG_4112.JPG",
+    "source_name": "IMG_4112.JPG",
+    "repo_path": "assets/photo-library/img-4112.jpg",
+    "file": "assets/photo-library/img-4112.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4112-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4112-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4112-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4112-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4112-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4112-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4112-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4112-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Sedona, Arizona",
+    "location": "Between Sedona and Scottsdale, Arizona",
+    "credit": null,
+    "alt": null,
+    "order": 25
+  },
+  {
+    "filename": "IMG_4114.JPG",
+    "source_name": "IMG_4114.JPG",
+    "repo_path": "assets/photo-library/img-4114.jpg",
+    "file": "assets/photo-library/img-4114.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4114-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4114-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4114-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4114-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4114-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4114-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4114-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4114-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Sedona, Arizona",
+    "location": "Between Sedona and Scottsdale, Arizona",
+    "credit": null,
+    "alt": null,
+    "order": 26
+  },
+  {
+    "filename": "IMG_4115.JPG",
+    "source_name": "IMG_4115.JPG",
+    "repo_path": "assets/photo-library/img-4115.jpg",
+    "file": "assets/photo-library/img-4115.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4115-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4115-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4115-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4115-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4115-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4115-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4115-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4115-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Sedona, Arizona",
+    "location": "Between Sedona and Scottsdale, Arizona",
+    "credit": null,
+    "alt": null,
+    "order": 27
+  },
+  {
+    "filename": "IMG_4275.JPG",
+    "source_name": "IMG_4275.JPG",
+    "repo_path": "assets/photo-library/img-4275.jpg",
+    "file": "assets/photo-library/img-4275.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4275-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4275-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4275-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4275-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4275-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4275-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4275-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4275-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": true,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": null,
+    "location": null,
+    "credit": null,
+    "alt": null,
+    "order": 28
+  },
+  {
+    "filename": "IMG_4740.JPG",
+    "source_name": "IMG_4740.JPG",
+    "repo_path": "assets/photo-library/img-4740.jpg",
+    "file": "assets/photo-library/img-4740.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4740-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": true,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": null,
+    "location": null,
+    "credit": null,
+    "alt": null,
+    "order": 29
+  },
+  {
+    "filename": "IMG_5440.JPG",
+    "source_name": "IMG_5440.JPG",
+    "repo_path": "assets/photo-library/img-5440.jpg",
+    "file": "assets/photo-library/img-5440.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-5440-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-5440-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-5440-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-5440-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-5440-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-5440-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-5440-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-5440-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Sedona, Arizona",
+    "location": "Sedona, Arizona",
+    "credit": null,
+    "alt": null,
+    "order": 30
+  },
+  {
+    "filename": "IMG_8767.JPG",
+    "source_name": "IMG_8767.JPG",
+    "repo_path": "assets/photo-library/img-8767.jpg",
+    "file": "assets/photo-library/img-8767.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-8767-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-8767-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-8767-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-8767-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-8767-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-8767-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-8767-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-8767-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": true,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": null,
+    "location": null,
+    "credit": null,
+    "alt": null,
+    "order": 31
   }
 ]
