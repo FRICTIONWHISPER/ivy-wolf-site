@@ -102,11 +102,11 @@
         "fmt": "jpeg"
       }
     ],
-    "unplaced": true,
+    "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": null,
-    "location": null,
+    "collection": "The Bahamas",
+    "location": "Nassau, Bahamas",
     "credit": null,
     "alt": null,
     "order": 2
