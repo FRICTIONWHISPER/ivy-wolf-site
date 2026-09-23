@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif">
-<rect x="0" y="0" width="620" height="260" fill="#0B0B0B"/>
-<text x="40" y="118" font-size="76" font-weight="800" letter-spacing="-2" fill="#FFFFFF">Ivy Wolf Art<tspan dx="-2" fill="#5104FE">.</tspan></text>
-<text x="42" y="184" font-size="46" font-weight="200" letter-spacing="16" fill="#9A9A9A">wolf</text>
+<rect x="0" y="0" width="620" height="260" fill="#111111"/>
+<text x="40" y="118" font-size="76" font-weight="800" letter-spacing="-2" fill="#FFFFFF">Ivy Wolf Art<tspan dx="-2" fill="#7C5CFF">.</tspan></text>
+<text x="42" y="184" font-size="46" font-weight="200" letter-spacing="16" fill="#757575">wolf</text>
 </svg>

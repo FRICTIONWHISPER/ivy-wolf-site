@@ -1,9 +1,9 @@
 {
-  "ink": "#0B0B0B",
+  "ink": "#111111",
   "paper": "#FFFFFF",
-  "accent": "#5104FE",
-  "muted_dark": "#9A9A9A",
-  "muted_light": "#6B6B6B",
-  "band": "#F5F4F2",
-  "rule": "#E4E2DE"
+  "accent": "#7C5CFF",
+  "muted_dark": "#757575",
+  "muted_light": "#555555",
+  "band": "#F1F1F1",
+  "rule": "#DADADA"
 }
