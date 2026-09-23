@@ -1,0 +1,30 @@
+{
+  "brand_name": "Ivy Wolf Art",
+  "product_name": "Ivy Wolf Art",
+  "whisper_word": "wolf",
+  "domain": "ivy-wolf.com",
+  "repo_path": "/Users/theaviator/AV-0/business/repos/ivy-wolf-site",
+  "endorsement": "a Wolf Co. collection",
+  "tokens": {
+    "ink": "#000000",
+    "paper": "#FFFFFF",
+    "accent": "#A8863F",
+    "muted_dark": "#B4AFA6",
+    "muted_light": "#4A4A4A",
+    "accent_2": "#7A1420"
+  },
+  "owner": {
+    "name": "Wolf Co.",
+    "entity_type": "TBD-PIC",
+    "state": "Wyoming",
+    "entity_id": "TBD-PIC",
+    "gp": "TBD-PIC",
+    "address": "TBD-PIC",
+    "agent": "TBD-PIC"
+  },
+  "trademark_class": "016",
+  "goods_services": "Original paintings; limited-edition reproductions of original paintings; commissioned original artworks.",
+  "filing_basis": "1(b) intent to use",
+  "specimen_note": "screenshot of the live ivy-wolf.com collection page showing the mark, a priced work, and the date",
+  "credit": "Built by Uplift Technologies"
+}
