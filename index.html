@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVY WOLF ART</title>
+  <meta name="description" content="Ivy Wolf Art — Original expressionist paintings. Commissioned works and collections from Ivy Wolf. What the eyes see, the soul remembers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ── BRAND TOKENS (brand-tokens.json, ivy-wolf-site root) ── */
+    :root {
+      --ink:         #000000;
+      --paper:       #FFFFFF;
+      --brass:       #A8863F;
+      --oxblood:     #7A1420;
+      --muted-dark:  #B4AFA6;
+      --muted-light: #4A4A4A;
+      --grey-band:   rgba(180, 175, 166, 0.12); /* derived from --muted-dark, not a hex */
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Archivo', Helvetica Neue, Helvetica, Arial, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── TYPE SCALE ── */
+    .display {
+      font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+    }
+    .display-italic {
+      font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ── EYEBROW RULE (brass) ── */
+    .brass-rule { display: block; width: 2.5rem; height: 1px; background: var(--brass); }
+
+    /* ── PILLS ── */
+    .pill-black {
+      display: inline-block;
+      padding: .75rem 1.75rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: 'Archivo', sans-serif;
+      font-size: .8125rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      transition: background .2s;
+    }
+    .pill-black:hover { background: var(--muted-light); }
+    .pill-ghost {
+      display: inline-block;
+      padding: .75rem 1.75rem;
+      background: transparent;
+      color: var(--ink);
+      font-family: 'Archivo', sans-serif;
+      font-size: .8125rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      border: 1px solid var(--ink);
+      transition: background .2s, color .2s;
+    }
+    .pill-ghost:hover { background: var(--ink); color: var(--paper); }
+
+    /* ── NAV ── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--muted-dark);
+    }
+    .nav-wordmark {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.125rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a {
+      font-size: .75rem; font-weight: 500;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted-light);
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ── OPENING STATEMENT ── */
+    .opening {
+      max-width: 36rem; margin: 0 auto;
+      padding: 7rem 2rem;
+      text-align: center;
+    }
+    .opening-eyebrow {
+      font-size: .6875rem; font-weight: 500;
+      letter-spacing: .15em; text-transform: uppercase;
+      color: var(--muted-light);
+      margin-bottom: 1.5rem;
+    }
+    .opening h1 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    .opening-sub {
+      font-size: 1rem; line-height: 1.7;
+      color: var(--muted-light);
+      max-width: 28rem; margin: 0 auto 2.5rem;
+    }
+    .opening-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── HERO ── */
+    .hero { position: relative; }
+    .hero-img-wrap {
+      width: 100%;
+      aspect-ratio: 21 / 9;
+      overflow: hidden;
+      background: var(--muted-dark);
+    }
+    .hero-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      /* IN COLOUR — no filter */
+    }
+    .hero-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--muted-dark);
+      font-family: 'Archivo', sans-serif;
+      font-size: .75rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted-light);
+    }
+    .hero-rule { height: 1px; background: var(--brass); }
+    .hero-credit {
+      padding: .625rem 2.5rem;
+      font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--oxblood); /* oxblood label */
+    }
+    .hero-credit span { color: var(--muted-light); }
+
+    /* ── COLLECTIONS ── */
+    .collections { padding: 6rem 2.5rem; }
+    .collections-header { text-align: center; margin-bottom: 4rem; }
+    .collections-header h2 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin-top: .75rem;
+    }
+    .plate {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      max-width: 72rem; margin: 0 auto 5rem;
+      align-items: center;
+    }
+    .plate.reverse { direction: rtl; }
+    .plate.reverse > * { direction: ltr; }
+    .plate-img {
+      aspect-ratio: 4 / 3; overflow: hidden;
+      background: var(--muted-dark);
+    }
+    .plate-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(1) contrast(1.06);
+    }
+    .plate-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: var(--grey-band);
+      border: 1px solid var(--muted-dark);
+      gap: .75rem;
+    }
+    .plate-placeholder span {
+      font-size: .6875rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--muted-light);
+    }
+    .plate-placeholder .pending-rule {
+      width: 2rem; height: 1px; background: var(--brass);
+    }
+    .plate-body { padding: 3rem 3.5rem; }
+    .plate-eyebrow {
+      font-size: .6875rem; font-weight: 500;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted-light); margin-bottom: .75rem;
+    }
+    .plate-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      margin-bottom: .5rem;
+    }
+    .plate-status {
+      font-size: .8125rem; color: var(--muted-light);
+      margin-bottom: 1.5rem;
+    }
+    .plate-credit {
+      font-size: .6875rem; letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .plate-credit .label { color: var(--oxblood); }
+    .plate-credit .body  { color: var(--muted-light); }
+
+    /* ── PRICES ── */
+    .prices { background: var(--grey-band); padding: 6rem 2.5rem; }
+    .prices-inner { max-width: 56rem; margin: 0 auto; }
+    .prices-header { text-align: center; margin-bottom: 3rem; }
+    .prices-header h2 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: .75rem;
+    }
+    .price-band {
+      text-align: center;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: .04em; margin-bottom: 3rem;
+    }
+
+    .price-table { width: 100%; border-collapse: collapse; margin-bottom: 3rem; }
+    .price-table th {
+      text-align: left; font-size: .6875rem; font-weight: 500;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted-light); padding: .75rem 1rem;
+      border-bottom: 1px solid var(--muted-dark);
+    }
+    .price-table td {
+      padding: 1.125rem 1rem;
+      font-size: .9375rem;
+      border-bottom: 1px solid var(--muted-dark);
+      vertical-align: middle;
+    }
+    .price-table tbody tr:last-child td { border-bottom: none; }
+    .price-table td.tier-price {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.25rem;
+      color: var(--oxblood); /* oxblood: event color for prices */
+    }
+    .price-table td.tier-name { font-weight: 500; }
+    .auth-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      gap: 1.5rem; margin-top: 1rem;
+    }
+    .auth-card {
+      padding: 1.5rem;
+      border: 1px solid var(--muted-dark);
+      background: var(--paper);
+    }
+    .auth-card-rule {
+      display: block; width: 1.5rem; height: 1px;
+      background: var(--brass); margin-bottom: 1rem;
+    }
+    .auth-card h4 {
+      font-size: .75rem; font-weight: 500;
+      letter-spacing: .1em; text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+    .auth-card p {
+      font-size: .8125rem; line-height: 1.6;
+      color: var(--muted-light);
+    }
+
+    /* ── STUDIO ── */
+    .studio { padding: 6rem 2.5rem; }
+    .studio-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; max-width: 72rem; margin: 0 auto;
+      align-items: center;
+    }
+    .studio-img {
+      aspect-ratio: 3 / 4; overflow: hidden;
+      background: var(--muted-dark);
+    }
+    .studio-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(1) contrast(1.06);
+    }
+    .studio-body { }
+    .studio-quote {
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--brass);
+      margin-bottom: 2rem;
+    }
+    .studio-quote blockquote {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+      line-height: 1.4;
+      margin-bottom: .75rem;
+    }
+    .studio-quote cite {
+      font-size: .75rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted-light);
+      font-style: normal;
+    }
+    .studio-caption {
+      font-size: .8125rem; line-height: 1.7;
+      color: var(--muted-light); margin-bottom: 2rem;
+    }
+    .studio-credit {
+      font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .studio-credit .label { color: var(--oxblood); }
+    .studio-credit .body  { color: var(--muted-light); }
+
+    /* ── THE IVY WOLF LIFE ── */
+    .ivy-life { background: var(--grey-band); padding: 6rem 2.5rem; }
+    .ivy-life-inner { max-width: 72rem; margin: 0 auto; }
+    .ivy-life-header { text-align: center; margin-bottom: 3rem; }
+    .ivy-life-header h2 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: .75rem;
+    }
+    .ivy-life-img {
+      width: 100%; aspect-ratio: 16 / 7; overflow: hidden;
+      background: var(--muted-dark);
+    }
+    .ivy-life-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(1) contrast(1.06);
+    }
+    .ivy-life-credit {
+      margin-top: .75rem;
+      font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .ivy-life-credit .label { color: var(--oxblood); }
+    .ivy-life-credit .body  { color: var(--muted-light); }
+
+    /* ── COMMISSIONS CLOSER ── */
+    .commissions { padding: 7rem 2.5rem; text-align: center; }
+    .commissions-inner { max-width: 36rem; margin: 0 auto; }
+    .commissions h2 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin-top: .75rem; margin-bottom: 1.25rem;
+    }
+    .commissions-sub {
+      font-size: 1rem; line-height: 1.7;
+      color: var(--muted-light); margin-bottom: 2.5rem;
+    }
+    .commissions-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      border-top: 1px solid var(--muted-dark);
+      padding: 2.5rem 2.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-legal {
+      font-size: .75rem; color: var(--muted-light); line-height: 1.6;
+    }
+    .footer-credit {
+      font-size: .75rem; color: var(--muted-dark);
+      letter-spacing: .06em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .plate { grid-template-columns: 1fr; }
+      .plate.reverse { direction: ltr; }
+      .plate-body { padding: 2rem 1.25rem; }
+      .studio-inner { grid-template-columns: 1fr; }
+      .site-footer { flex-direction: column; }
+      .hero-credit { padding: .5rem 1.25rem; }
+      .collections { padding: 4rem 1.25rem; }
+      .prices { padding: 4rem 1.25rem; }
+      .studio { padding: 4rem 1.25rem; }
+      .ivy-life { padding: 4rem 1.25rem; }
+      .commissions { padding: 4rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1 · NAV -->
+  <nav class="site-nav">
+    <a href="/" class="nav-wordmark">IVY WOLF ART</a>
+    <div class="nav-links">
+      <a href="#collections">Collections</a>
+      <a href="#prices">Prices</a>
+      <a href="#ivy-life">The Ivy Wolf Life</a>
+      <a href="#studio">Studio</a>
+      <a href="#commissions" class="pill-black">Commission a work</a>
+    </div>
+  </nav>
+
+  <!-- 2 · OPENING STATEMENT -->
+  <section class="opening">
+    <p class="opening-eyebrow">Ivy Wolf Art &mdash; Original Expressionist Works</p>
+    <span class="brass-rule" style="margin: 0 auto 1.25rem;"></span>
+    <h1 class="display">Not what we own.<br>Where we've been.</h1>
+    <p class="opening-sub">
+      Expressionism with physical textures. Unique, unrepeatable works.
+      Commissioned art born from a single conversation.
+    </p>
+    <div class="opening-ctas">
+      <a href="#commissions" class="pill-black">Commission a work</a>
+      <a href="#collections" class="pill-ghost">View the collections</a>
+    </div>
+  </section>
+
+  <!-- 3 · HERO — image 04 Bahamas, IN COLOUR, 21:9 -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <!-- image 04_full.jpg: Bahamas — IN COLOUR, no filter -->
+      <img
+        src="assets/photo-library/04_full.jpg"
+        alt="Bahamas — place photograph by Justin Smith"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.hero-placeholder').style.display='flex';"
+      >
+      <div class="hero-placeholder" style="display:none;">
+        Bahamas &mdash; photograph pending
+      </div>
+    </div>
+    <div class="hero-rule"></div>
+    <p class="hero-credit">
+      <span class="label" style="color: var(--oxblood);">PLACE PHOTOGRAPH &middot; BAHAMAS</span>
+      <span> &mdash; photograph by Justin Smith</span>
+    </p>
+  </section>
+
+  <!-- 4 · COLLECTIONS -->
+  <section class="collections" id="collections">
+    <div class="collections-header">
+      <span class="brass-rule" style="margin: 0 auto .75rem;"></span>
+      <p class="opening-eyebrow">Works by Collection</p>
+      <h2 class="display">The Collections</h2>
+    </div>
+
+    <!-- Plate 01 — Bahamas (image 04_card.jpg) -->
+    <div class="plate">
+      <div class="plate-img">
+        <img
+          src="assets/photo-library/04_card.jpg"
+          alt="Bahamas — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="plate-body">
+        <p class="plate-eyebrow">Collection 01</p>
+        <h3 class="plate-title display">Bahamas</h3>
+        <p class="plate-status">Five works planned</p>
+        <p class="plate-credit">
+          <span class="label">PLACE PHOTOGRAPH &middot; BAHAMAS</span>
+          <span class="body"> &mdash; photograph by Justin Smith</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Plate 02 — Austin, Texas (image 07_card.jpg) -->
+    <div class="plate reverse">
+      <div class="plate-img">
+        <img
+          src="assets/photo-library/07_card.jpg"
+          alt="Austin, Texas — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="plate-body">
+        <p class="plate-eyebrow">Collection 02</p>
+        <h3 class="plate-title display">Austin, Texas</h3>
+        <p class="plate-status">One work complete</p>
+        <p class="plate-credit">
+          <span class="label">PLACE PHOTOGRAPH &middot; AUSTIN, TEXAS</span>
+          <span class="body"> &mdash; photograph by Justin Smith</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Plate 03 — Sedona, Arizona (image 10_card.jpg) -->
+    <div class="plate">
+      <div class="plate-img">
+        <img
+          src="assets/photo-library/10_card.jpg"
+          alt="Sedona, Arizona — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="plate-body">
+        <p class="plate-eyebrow">Collection 03</p>
+        <h3 class="plate-title display">Sedona, Arizona</h3>
+        <p class="plate-status">Four works planned</p>
+        <p class="plate-credit">
+          <span class="label">PLACE PHOTOGRAPH &middot; SEDONA, ARIZONA</span>
+          <span class="body"> &mdash; photograph by Justin Smith</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Plate 04 — Telluride, Colorado — NO IMAGE: hairline placeholder -->
+    <div class="plate reverse">
+      <div class="plate-img">
+        <div class="plate-placeholder" style="display:flex;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="plate-body">
+        <p class="plate-eyebrow">Collection 04</p>
+        <h3 class="plate-title display">Telluride, Colorado</h3>
+        <p class="plate-status">Coming soon</p>
+        <p class="plate-credit" style="color: var(--muted-dark);">
+          No photograph on file &mdash; image pending
+        </p>
+      </div>
+    </div>
+
+    <!-- Plate 05 — San Blas Islands (image 08_card.jpg) -->
+    <div class="plate">
+      <div class="plate-img">
+        <img
+          src="assets/photo-library/08_card.jpg"
+          alt="San Blas Islands, Panama — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="plate-body">
+        <p class="plate-eyebrow">Collection 05</p>
+        <h3 class="plate-title display">San Blas Islands</h3>
+        <p class="plate-status">Three works planned</p>
+        <p class="plate-credit">
+          <span class="label">PLACE PHOTOGRAPH &middot; SAN BLAS, PANAMA</span>
+          <span class="body"> &mdash; photograph by Justin Smith</span>
+        </p>
+      </div>
+    </div>
+  </section><!-- /collections -->
+
+  <!-- 5 · PRICES -->
+  <section class="prices" id="prices">
+    <div class="prices-inner">
+      <div class="prices-header">
+        <span class="brass-rule" style="margin: 0 auto .75rem;"></span>
+        <p class="opening-eyebrow">Pricing</p>
+        <h2 class="display">Original Works</h2>
+      </div>
+      <p class="price-band display">$1,000 &mdash; $3,000</p>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Format</th>
+            <th>Dimensions</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tier-name">Small</td>
+            <td>30 &times; 40 cm</td>
+            <td class="tier-price">$1,000</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Medium</td>
+            <td>50 &times; 70 cm</td>
+            <td class="tier-price">$1,450</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Large</td>
+            <td>70 &times; 100 cm</td>
+            <td class="tier-price">$1,950</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Grand</td>
+            <td>100 &times; 140 cm</td>
+            <td class="tier-price">$2,500</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Statement</td>
+            <td>140 &times; 200 cm</td>
+            <td class="tier-price">$3,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 4 Authenticity cards -->
+      <div class="auth-cards">
+        <div class="auth-card">
+          <span class="auth-card-rule"></span>
+          <h4>Certificate of Authenticity</h4>
+          <p>Every original ships with a signed COA recording title, year, dimensions, technique, and edition status.</p>
+        </div>
+        <div class="auth-card">
+          <span class="auth-card-rule"></span>
+          <h4>Commissioned: Never Replicated</h4>
+          <p>A commissioned work is painted once, for one person. No duplicate will ever exist in any form.</p>
+        </div>
+        <div class="auth-card">
+          <span class="auth-card-rule"></span>
+          <h4>Collection Editions</h4>
+          <p>Select collection works carry a finite, numbered edition. Edition status is declared on the COA at delivery.</p>
+        </div>
+        <div class="auth-card">
+          <span class="auth-card-rule"></span>
+          <h4>Artist&rsquo;s Signature</h4>
+          <p>Each piece is signed on the back and sealed in UV-resistant resin. The front surface carries the work alone.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- /prices -->
+
+  <!-- 6 · STUDIO — image 05 Sedona, monochrome, pull-quote -->
+  <section class="studio" id="studio">
+    <div class="studio-inner">
+      <div class="studio-img">
+        <img
+          src="assets/photo-library/05_full.jpg"
+          alt="Sedona, Arizona — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <div class="studio-body">
+        <span class="brass-rule" style="margin-bottom: 1.5rem;"></span>
+        <p class="opening-eyebrow" style="margin-bottom: 1.5rem;">The Artist</p>
+        <div class="studio-quote">
+          <blockquote>
+            Lo que los ojos ven,<br>el alma recuerda.
+          </blockquote>
+          <cite>Ivy Wolf</cite>
+        </div>
+        <p class="studio-caption">
+          Ivy Wolf is an Ecuadorian expressionist whose textured, unrepeatable works
+          transform emotion and memory into physical form. Each piece carries a
+          conversation &mdash; and a soul. Twenty-one years of practice.
+        </p>
+        <p class="studio-credit">
+          <span class="label">PLACE PHOTOGRAPH &middot; SEDONA, ARIZONA</span>
+          <span class="body"> &mdash; photograph by Justin Smith</span>
+        </p>
+      </div>
+    </div>
+  </section><!-- /studio -->
+
+  <!-- 7 · THE IVY WOLF LIFE — grey band, image 12, monochrome -->
+  <section class="ivy-life" id="ivy-life">
+    <div class="ivy-life-inner">
+      <div class="ivy-life-header">
+        <span class="brass-rule" style="margin: 0 auto .75rem;"></span>
+        <p class="opening-eyebrow">In the Field</p>
+        <h2 class="display">The Ivy Wolf Life</h2>
+      </div>
+      <div class="ivy-life-img">
+        <img
+          src="assets/photo-library/12_full.jpg"
+          alt="Sedona, Arizona — place photograph by Justin Smith"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.plate-placeholder').style.display='flex';"
+        >
+        <div class="plate-placeholder" style="display:none;">
+          <div class="pending-rule"></div>
+          <span>Photograph pending</span>
+        </div>
+      </div>
+      <p class="ivy-life-credit">
+        <span class="label">PLACE PHOTOGRAPH &middot; SEDONA, ARIZONA</span>
+        <span class="body"> &mdash; photograph by Justin Smith</span>
+      </p>
+    </div>
+  </section><!-- /ivy-life -->
+
+  <!-- 8 · COMMISSIONS CLOSER -->
+  <section class="commissions" id="commissions">
+    <div class="commissions-inner">
+      <span class="brass-rule" style="margin: 0 auto .75rem;"></span>
+      <p class="opening-eyebrow">Commission a Work</p>
+      <h2 class="display">Every piece begins<br>with a conversation.</h2>
+      <p class="commissions-sub">
+        The Vision Session is free. We talk about the emotion, the space, the story
+        behind the work. Everything that follows is built on that conversation.
+      </p>
+      <div class="commissions-ctas">
+        <a href="mailto:ivywolf@mig-x.com?subject=Commission%20Inquiry%20—%20Ivy%20Wolf%20Art" class="pill-black">Begin a Vision Session</a>
+        <a href="#prices" class="pill-ghost">Review pricing</a>
+      </div>
+    </div>
+  </section><!-- /commissions -->
+
+  <!-- 9 · FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-legal">
+      <p>&copy; 2026 Ivy Wolf Art. All rights reserved.</p>
+      <p>Ivy Wolf Art is a brand of Wolf Co.</p>
+      <p>Contact: <a href="mailto:ivywolf@mig-x.com">ivywolf@mig-x.com</a></p>
+    </div>
+    <p class="footer-credit">Built by Uplift Technologies</p>
+  </footer>
+
+</body>
+</html>
