@@ -629,7 +629,7 @@
       fetch('assets/photo-library/photo-manifest.json')
         .then(function (r) { return r.json(); })
         .then(function (data) {
-          var entries = data.entries || [];
+          var entries = Array.isArray(data) ? data : (data.entries || []);
           if (!entries.length) {
             grid.innerHTML = '<p style="text-align:center;color:var(--muted-dark);font-size:.8125rem;">No photographs in this collection yet.</p>';
             return;
