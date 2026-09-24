@@ -1,0 +1,19 @@
+{
+  "site_name": "Ivy Wolf Art",
+  "domain": "ivy-wolf.com",
+  "owner_entity": "Wolf Co. — Ivy Wolf Art is a brand of Wolf Co.",
+  "audience": "Two buyers. FIRST, individuals who want an individual painting made for them — a family portrait, a place that matters to them, a landscape — across Panama, the United States, Mexico and Europe. SECOND, companies and other organisations (not artists) who want a unique collection for an office, a lobby, a home or a property. Both are buying something that exists once: a work made for them, or a work nobody else can own a copy of.",
+  "primary_goal": "TWO actions, not one. (1) BUY from a collection — an existing original. (2) COMMISSION a work — engage Ivy Wolf to paint to the buyer's desire, priced by size against the published terms.",
+  "pages": "A FULL SITE, NOT A ONE-PAGER. Collections and the blog are separate pages. Follow house-grammar.json v1.1 page map: / · /collections · /collections/<slug> · /journal · /journal/<slug> · /about · /services · /shop (dark) · /shop/<slug> (dark) · /contact · /thank-you · /legal",
+  "leads_email": "ivywolf@mig-x.com",
+  "support_email": "",
+  "tone": "Professional. The tone of everything in Ivy Wolf Art matches the tone of The Wolf Life.",
+  "domain_owned": "yes",
+  "email_provider": "None on ivy-wolf.com today. Ivy uses ivywolf@mig-x.com. Outlook/Microsoft 365 planned later as its own job — see DOC-2039. NEVER touched during a web cutover.",
+  "content_source": "PIC-STATED, COMMISSION FLOW: for a commissioned work the BUYER provides the initial image, then Ivy Wolf runs a vision meeting with them. NOTE FROM SIC: the PIC answered the commission intake flow. The question website-intake actually asks is who writes the WEBSITE COPY — that is still open and is the one remaining intake gap.",
+  "image_source": "The PIC's own photographs. Dropped into the iCloud lane 05 | IMAGE ASSETS / 01 | IMAGE DROP FOLDER / IWA, processed by image-intake-whisper: EXIF and GPS stripped, responsive variants written, manifest updated. Paintings arrive separately as artwork records.",
+  "formation_doc": "Not required for this build — not a verify-us site.",
+  "_blog_name": "The Ivy Wolf Life (route /journal)",
+  "_stated_by": "AVIATOR (PIC), 2026-09-23 and 2026-09-24",
+  "_sic_note": "The audience line is the SIC expansion of the PIC's stated words, written at his request (expand upon this audience for me). The substance — individuals in Panama/US/Mexico/Europe, and companies not artists wanting unique collections for office and home — is the PIC's. It is marked for his approval before it reaches any page."
+}

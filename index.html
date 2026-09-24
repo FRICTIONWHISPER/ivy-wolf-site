@@ -536,7 +536,7 @@
       <p>Ivy Wolf Art is a brand of Wolf Co.</p>
       <p>Contact: <a href="mailto:ivywolf@mig-x.com">ivywolf@mig-x.com</a></p>
     </div>
-    <p class="footer-credit">Built by Uplift Technologies</p>
+    <p class="footer-credit">Built by MIGX</p>
   </footer>
 
   <!-- GALLERY — fetches photo-manifest.json; never hardcoded markup -->
@@ -612,13 +612,11 @@
           (byCollection[p.collection] = byCollection[p.collection] || []).push(p);
         });
 
-        // roster first, in the order the PIC set it; then any collection the
-        // manifest knows about that the roster has not caught up with
-        var names = roster.slice();
-        Object.keys(byCollection).forEach(function (n) {
-          if (names.indexOf(n) === -1) names.push(n);
-        });
-        if (!names.length) names = Object.keys(byCollection);
+        // THE ROSTER IS THE AUTHORITY. The PIC set five collections and
+        // locked them. A collection the manifest carries that is NOT on the
+        // roster gets no plate - the page never invents a collection the PIC
+        // did not name. Only an empty roster falls back to the manifest.
+        var names = roster.length ? roster.slice() : Object.keys(byCollection);
 
         var html = '';
         names.forEach(function (name, i) {
