@@ -503,7 +503,8 @@
     "alt": null,
     "order": 32,
     "source_folder": "01 | BAHAMAS ",
-    "kind": "painting"
+    "kind": "painting",
+    "surface": "gallery"
   },
   {
     "filename": "02 | AUSTIN, TX/IMG_7086.JPG",
@@ -561,7 +562,8 @@
     "alt": null,
     "order": 33,
     "source_folder": "02 | AUSTIN, TX",
-    "kind": "painting"
+    "kind": "painting",
+    "surface": "services"
   },
   {
     "filename": "IWA | SED | 01/IMG_3216.HEIC",
