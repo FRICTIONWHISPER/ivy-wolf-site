@@ -497,7 +497,7 @@
     "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": "The Bahamas",
+    "collection": null,
     "location": "White Sands Beach, San Salvador, Bahamas",
     "credit": null,
     "alt": null,
@@ -555,7 +555,7 @@
     "unplaced": false,
     "site_code": "IWA",
     "domain": "ivy-wolf.com",
-    "collection": "Austin, Texas",
+    "collection": null,
     "location": "The Cotton Bowl, 2023 - Oklahoma Sooners v Texas",
     "credit": null,
     "alt": null,
@@ -1018,5 +1018,61 @@
     "alt": null,
     "order": 58,
     "source_folder": "IWA | TEX | 01"
+  },
+  {
+    "filename": "IMG_4740.JPG",
+    "source_name": "IMG_4740.JPG",
+    "repo_path": "assets/photo-library/img-4740.jpg",
+    "file": "assets/photo-library/img-4740.jpg",
+    "variants": [
+      {
+        "src": "assets/photo-library/img-4740-400w.webp",
+        "width": 400,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-400w.jpg",
+        "width": 400,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-800w.webp",
+        "width": 800,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-800w.jpg",
+        "width": 800,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1200w.webp",
+        "width": 1200,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1200w.jpg",
+        "width": 1200,
+        "fmt": "jpeg"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1600w.webp",
+        "width": 1600,
+        "fmt": "webp"
+      },
+      {
+        "src": "assets/photo-library/img-4740-1600w.jpg",
+        "width": 1600,
+        "fmt": "jpeg"
+      }
+    ],
+    "unplaced": false,
+    "site_code": "IWA",
+    "domain": "ivy-wolf.com",
+    "collection": "Panama",
+    "location": "San Blas Islands, Panama",
+    "credit": null,
+    "alt": null,
+    "order": 29
   }
 ]

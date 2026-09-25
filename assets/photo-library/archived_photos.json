@@ -1745,62 +1745,6 @@
     "source_folder": "IWA | TEX | 01"
   },
   {
-    "filename": "IMG_4740.JPG",
-    "source_name": "IMG_4740.JPG",
-    "repo_path": "assets/photo-library/img-4740.jpg",
-    "file": "assets/photo-library/img-4740.jpg",
-    "variants": [
-      {
-        "src": "assets/photo-library/img-4740-400w.webp",
-        "width": 400,
-        "fmt": "webp"
-      },
-      {
-        "src": "assets/photo-library/img-4740-400w.jpg",
-        "width": 400,
-        "fmt": "jpeg"
-      },
-      {
-        "src": "assets/photo-library/img-4740-800w.webp",
-        "width": 800,
-        "fmt": "webp"
-      },
-      {
-        "src": "assets/photo-library/img-4740-800w.jpg",
-        "width": 800,
-        "fmt": "jpeg"
-      },
-      {
-        "src": "assets/photo-library/img-4740-1200w.webp",
-        "width": 1200,
-        "fmt": "webp"
-      },
-      {
-        "src": "assets/photo-library/img-4740-1200w.jpg",
-        "width": 1200,
-        "fmt": "jpeg"
-      },
-      {
-        "src": "assets/photo-library/img-4740-1600w.webp",
-        "width": 1600,
-        "fmt": "webp"
-      },
-      {
-        "src": "assets/photo-library/img-4740-1600w.jpg",
-        "width": 1600,
-        "fmt": "jpeg"
-      }
-    ],
-    "unplaced": true,
-    "site_code": "IWA",
-    "domain": "ivy-wolf.com",
-    "collection": null,
-    "location": null,
-    "credit": null,
-    "alt": null,
-    "order": 29
-  },
-  {
     "filename": "03 | MIND, BODY, SPIRIT/IMG_8166 2.heic",
     "source_name": "03 | MIND, BODY, SPIRIT/IMG_8166 2.heic",
     "repo_path": "assets/photo-library/img-8166-2.jpg",
