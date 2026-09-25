@@ -358,16 +358,17 @@
 
     /* ── FOOTER ──────────────────────────────────────────────────────────────── */
     .site-footer {
-      border-top: 1px solid var(--ink);
-      padding: 2.5rem 2.5rem;
+      border-top: 1px solid var(--rule);
+      padding: 1.125rem 2.5rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
       gap: 1rem;
     }
-    .footer-legal { font-size: .75rem; color: var(--muted-light); line-height: 1.6; }
-    .footer-credit { font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-dark); }
+    .footer-legal { font-size: .6875rem; color: var(--muted-dark); line-height: 1.5; margin: 0; }
+    .footer-legal a { color: var(--muted-dark); }
+    .footer-credit { font-size: .625rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-dark); margin: 0; }
 
     /* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
     @media (max-width: 800px) {
@@ -448,12 +449,8 @@
     </div>
   </div>
   <footer class="site-footer">
-    <div class="footer-legal">
-      <p>&copy; 2026 Ivy Wolf Art. All rights reserved.</p>
-      <p>Ivy Wolf Art is a brand of Wolf Co.</p>
-      <p>Contact: <a href="mailto:ivywolf@mig-x.com">ivywolf@mig-x.com</a></p>
-    </div>
-    <p class="footer-credit">Built by MIGX</p>
+    <p class="footer-legal">&copy; 2026 Ivy Wolf Art &middot; a brand of Wolf Co. &middot; <a href="/contact">Contact</a></p>
+    <p class="footer-credit">Build by MIGX</p>
   </footer>
 </body>
 </html>
