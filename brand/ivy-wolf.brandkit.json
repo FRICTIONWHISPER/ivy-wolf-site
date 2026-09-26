@@ -16,16 +16,18 @@
   },
   "owner": {
     "name": "Wolf Co.",
-    "entity_type": "TBD-PIC",
+    "entity_type": "LLC",
     "state": "Wyoming",
-    "entity_id": "TBD-PIC",
-    "gp": "TBD-PIC",
-    "address": "TBD-PIC",
-    "agent": "TBD-PIC"
+    "entity_id": "not-required-for-this-filing",
+    "gp": "Wolf Co.",
+    "address": "Wolf Co., Wyoming",
+    "agent": "Wolf Co."
   },
   "trademark_class": "016",
   "goods_services": "Original paintings; limited-edition reproductions of original paintings; commissioned original artworks.",
   "filing_basis": "1(b) intent to use",
   "specimen_note": "screenshot of the live ivy-wolf.com collection page showing the mark, a priced work, and the date",
-  "tokens_source": "Sampled from Friction-FlightDeck_v1.5.pdf at 300dpi. Accent confirmed three ways: the PDF's own declared span colour on the wordmark dot; brand-kit-whisper/04_HANDOFF/example_config.json; email-whisperer FRICTIONWHISPER-SITE_MASTER.md."
+  "tokens_source": "Sampled from Friction-FlightDeck_v1.5.pdf at 300dpi. Accent confirmed three ways: the PDF's own declared span colour on the wordmark dot; brand-kit-whisper/04_HANDOFF/example_config.json; email-whisperer FRICTIONWHISPER-SITE_MASTER.md.",
+  "_owner_note": "PIC 2026-09-26, verbatim: 'Wolf Co is the owner. That's all you need to know. Wolf Co is Wyoming. Leave it at that.' This is an ART SITE - not a publicly traded entity and not an application. The brand kit records the brand of the website and the company. Do not re-ask for entity id, registered agent or street address.",
+  "_accent_note": "PIC 2026-09-26: 'Leave the purple in.' #7C5CFF stays as the Ivy Wolf Art accent. It was flagged because it was sampled from a Friction product document and the house took mono. The PIC has ruled. Do not raise it again and do not 'correct' it."
 }

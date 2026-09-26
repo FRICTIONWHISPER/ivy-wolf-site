@@ -10,11 +10,11 @@
 | Field | Value |
 |---|---|
 | Owner / claimant | Wolf Co. |
-| Entity type | TBD-PIC |
-| State / ID | Wyoming / TBD-PIC |
-| General Partner | TBD-PIC |
-| Address | TBD-PIC |
-| Registered Agent | TBD-PIC |
+| Entity type | LLC |
+| State / ID | Wyoming / not-required-for-this-filing |
+| General Partner | Wolf Co. |
+| Address | Wolf Co., Wyoming |
+| Registered Agent | Wolf Co. |
 
 ## Classification
 - **International Class 016.**
