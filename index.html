@@ -81,6 +81,7 @@
     }
     .nav-wordmark .wm-second { color: var(--muted-dark); }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-menu { display: none; }
     .nav-links a {
       font-size: .8125rem;
       font-weight: 500;
@@ -374,6 +375,24 @@
     @media (max-width: 800px) {
       .site-nav { padding: 1rem 1.25rem; }
       .nav-links { display: none; }
+      .nav-menu { display: block; position: relative; }
+      .nav-menu > summary {
+        list-style: none; cursor: pointer; padding: .5rem .25rem;
+        font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase;
+        color: var(--muted-dark); user-select: none;
+      }
+      .nav-menu > summary::-webkit-details-marker { display: none; }
+      .nav-menu[open] > summary { color: var(--ink); }
+      .nav-menu-panel {
+        position: absolute; right: 0; top: 2.25rem; z-index: 40;
+        min-width: 13rem; background: var(--paper);
+        border: 1px solid var(--rule); padding: .5rem 0;
+      }
+      .nav-menu-panel a {
+        display: block; padding: .6rem 1.1rem; text-decoration: none;
+        font-size: .8125rem; color: var(--muted-light);
+      }
+      .nav-menu-panel a:hover { color: var(--ink); }
       .plate, .plate.reverse { grid-template-columns: 1fr; }
       .plate.reverse .plate-img, .plate.reverse .plate-body { order: unset; }
       .about-split { grid-template-columns: 1fr; }
@@ -384,6 +403,17 @@
 <body>
   <nav class="site-nav">
     <a href="/" class="nav-wordmark">IVY WOLF <span class="wm-second">ART</span></a>
+    <details class="nav-menu">
+      <summary>Menu</summary>
+      <div class="nav-menu-panel">
+        <a href="/">Home</a>
+        <a href="/collections">Collections</a>
+        <a href="/journal">Journal</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Commission a work</a>
+      </div>
+    </details>
     <div class="nav-links">
       <a href="/collections">Collections</a>
       <a href="/journal">Journal</a>
