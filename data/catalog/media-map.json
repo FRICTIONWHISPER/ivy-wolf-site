@@ -1,0 +1,293 @@
+{
+  "site": "IWA (ivy-wolf.com)",
+  "updated": "2026-09-28",
+  "source_of_truth": "PIC labels (pic_labels.json). Nothing inferred.",
+  "ingest_rule": "New uploads land in a DATED COMMITTED folder: uploads/COMMITTED/YYYY-MM-DD/<NN | COLLECTION>/ (the PIC pipe convention, e.g. '03 | MIND, BODY, SPIRIT'). Each image is numbered + labeled, then APPENDED to this map. An image is never published until it appears here. A raw drop with no date folder is not committed.",
+  "collection_roster_live": [
+    "Austin, Texas",
+    "The Bahamas",
+    "Telluride, Colorado",
+    "Sedona, Arizona",
+    "Panama"
+  ],
+  "v2_collections": {
+    "Laguna, Newport": {
+      "folder": "IWA | NEW | 01",
+      "status": "PINNED for v2",
+      "kind": "place-photo",
+      "best_frames": [
+        "img-0784",
+        "img-0785"
+      ],
+      "means": "PIC 2026-09-25: 'NEW was Newport Laguna. Hold those pictures to later so we can publish those for Laguna.'",
+      "director_note": "5 frames. Two are genuinely strong (0784 sunset over rocks, 0785 wave breaking at sunset). 0782/0783 are the same heart-hands silhouette twice. 0803 was shipping sideways - fixed."
+    },
+    "Mind, Body and Spirit": {
+      "folder": "03 | MIND, BODY, SPIRIT",
+      "status": "PINNED for v2",
+      "kind": "paintings",
+      "best_frames": [
+        "img-8204"
+      ],
+      "means": "PIC 2026-09-25: 'that'll be the Mind, Body and Spirit collection' - abstracts, added after version one.",
+      "director_note": "3 photographs, TWO distinct paintings. 8203 and 8204 are the SAME blue abstract shot twice - 8204 is the better frame. 8166-2 is a different, warmer painting. PIC asked me to pick the best one: 8204."
+    }
+  },
+  "folder_convention": {
+    "IWA | TEX | 01": "TEX is Telluride Regional Airport. You said you dropped Telluride images and named the folders as airport identifiers.",
+    "IWA | SED | 01": "SED is Sedona. You said you dropped more Sedona so we have better to choose from.",
+    "01 | BAHAMAS ": "PAINTING. You said: the Bahamas painting is off White Sands Beach in San Salvador.",
+    "02 | AUSTIN, TX": "PAINTING. You said: the Austin, Texas one is at the Cotton Bowl in 2023 between Oklahoma Sooners and Texas."
+  },
+  "painting_rule": "PIC 2026-09-25 LOCKED: paintings never sit inside a place collection. A collection is where the PIC has BEEN; a painting is what Ivy MADE. They render on their own surfaces - the Cotton Bowl portrait on /services as the commission proof, the seascape in the works gallery. Never greyscaled.",
+  "counts": {
+    "SELECT-KEEP": 17,
+    "HELD-v2-PIC-PICK": 3,
+    "HELD": 2,
+    "FNK-PINNED": 5,
+    "LIVE-ELIGIBLE": 6,
+    "PAINTING": 2
+  },
+  "media": [
+    {
+      "id": "8d37fd7b-a390-447c-8246-9540122912e4",
+      "collection": "Austin, Texas",
+      "category": "place-photo",
+      "location": "New Braunfels, Austin, Texas",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-0213",
+      "collection": "Austin, Texas",
+      "category": "place-photo",
+      "location": "Lake Travis, from the air",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-0337",
+      "collection": "Austin, Texas",
+      "category": "place-photo",
+      "location": "Over Skies of Austin",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-0342",
+      "collection": "Austin, Texas",
+      "category": "place-photo",
+      "location": "Over Skies of Austin",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-0784",
+      "collection": "Laguna, Newport",
+      "category": "place-photo",
+      "status": "HELD-v2-PIC-PICK",
+      "note": "best frame chosen by PIC/Director for Laguna, Newport"
+    },
+    {
+      "id": "img-0785",
+      "collection": "Laguna, Newport",
+      "category": "place-photo",
+      "status": "HELD-v2-PIC-PICK",
+      "note": "best frame chosen by PIC/Director for Laguna, Newport"
+    },
+    {
+      "id": "img-1792",
+      "collection": "The Bahamas",
+      "category": "place-photo",
+      "location": "Nassau, Bahamas",
+      "status": "SELECT-KEEP",
+      "note": "PIC: keep the old main image as the Bahamas collection picture"
+    },
+    {
+      "id": "img-1796",
+      "category": "place-photo",
+      "status": "HELD",
+      "note": "PIC 2026-09-25: 'remove image 1 as previous woman images.' Personal, not a collection frame."
+    },
+    {
+      "id": "img-1877",
+      "collection": "The Bahamas",
+      "category": "place-photo",
+      "location": "The Bahamas",
+      "status": "SELECT-KEEP",
+      "note": "PIC picked Bahamas sheet image 2 as the collection cover."
+    },
+    {
+      "id": "img-2109",
+      "category": "product",
+      "status": "FNK-PINNED",
+      "note": "Fly Naked product shot - FNK lane, not Ivy Wolf"
+    },
+    {
+      "id": "img-2111",
+      "category": "product",
+      "status": "FNK-PINNED",
+      "note": "Fly Naked product shot - FNK lane, not Ivy Wolf"
+    },
+    {
+      "id": "img-2122",
+      "collection": "The Bahamas",
+      "category": "place-photo",
+      "location": "San Salvador, Bahamas",
+      "hero": true,
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-2182",
+      "collection": "The Bahamas",
+      "category": "place-photo",
+      "location": "The Bahamas, from the air",
+      "surface": "journal",
+      "status": "SELECT-KEEP",
+      "note": "Director pick for The Ivy Wolf Life journal image - the PIC gave 1877 to the Bahamas cover AND said yes to the reef for the journal; that is the same frame, and no photograph appears twice on one page. One word changes it."
+    },
+    {
+      "id": "img-3178",
+      "category": "place-photo",
+      "location": "Puerto Lopez, Ecuador",
+      "status": "HELD",
+      "note": "Ecuador is not one of the final five. Photograph held, location kept."
+    },
+    {
+      "id": "img-3216",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-3672",
+      "category": "product",
+      "status": "FNK-PINNED",
+      "note": "Fly Naked product shot - FNK lane, not Ivy Wolf"
+    },
+    {
+      "id": "img-4045",
+      "category": "product",
+      "status": "FNK-PINNED",
+      "note": "Fly Naked product shot - FNK lane, not Ivy Wolf"
+    },
+    {
+      "id": "img-4046",
+      "category": "product",
+      "status": "FNK-PINNED",
+      "note": "Fly Naked product shot - FNK lane, not Ivy Wolf"
+    },
+    {
+      "id": "img-4112",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Between Sedona and Scottsdale, Arizona",
+      "status": "LIVE-ELIGIBLE"
+    },
+    {
+      "id": "img-4114",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Between Sedona and Scottsdale, Arizona",
+      "status": "LIVE-ELIGIBLE"
+    },
+    {
+      "id": "img-4115",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Between Sedona and Scottsdale, Arizona",
+      "status": "LIVE-ELIGIBLE"
+    },
+    {
+      "id": "img-4202",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-4249",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-4275",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Over the skies between Scottsdale and Sedona, Arizona",
+      "status": "LIVE-ELIGIBLE"
+    },
+    {
+      "id": "img-4740",
+      "collection": "Panama",
+      "category": "place-photo",
+      "location": "San Blas Islands, Panama",
+      "status": "SELECT-KEEP",
+      "note": "PIC 2026-09-25: '4740 is San Blas Islands, Panama.' Corrects my earlier wrong Sedona label."
+    },
+    {
+      "id": "img-5440",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Sedona, Arizona",
+      "status": "LIVE-ELIGIBLE"
+    },
+    {
+      "id": "img-5694",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-5847",
+      "collection": "Telluride, Colorado",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-5921",
+      "collection": "Telluride, Colorado",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-5969",
+      "collection": "Telluride, Colorado",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-7086",
+      "category": "painting",
+      "location": "The Cotton Bowl, 2023 - Oklahoma Sooners v Texas",
+      "surface": "services",
+      "status": "PAINTING",
+      "note": "PIC 2026-09-25: paintings OUT of the collections. Cotton Bowl goes to /services as the commission proof."
+    },
+    {
+      "id": "img-7235",
+      "category": "painting",
+      "location": "White Sands Beach, San Salvador, Bahamas",
+      "surface": "gallery",
+      "status": "PAINTING",
+      "note": "PIC 2026-09-25: paintings OUT of the collections. The seascape is Ivy's work, shown as a painting, not as a place plate."
+    },
+    {
+      "id": "img-8011",
+      "collection": "Telluride, Colorado",
+      "category": "place-photo",
+      "status": "SELECT-KEEP"
+    },
+    {
+      "id": "img-8204",
+      "collection": "Mind, Body and Spirit",
+      "category": "paintings",
+      "status": "HELD-v2-PIC-PICK",
+      "note": "best frame chosen by PIC/Director for Mind, Body and Spirit"
+    },
+    {
+      "id": "img-8767",
+      "collection": "Sedona, Arizona",
+      "category": "place-photo",
+      "location": "Over Sedona, Arizona",
+      "status": "LIVE-ELIGIBLE",
+      "note": "PIC 2026-09-25: 'Page 06 is not Panama - that's over Sedona.' My San Blas label was wrong."
+    }
+  ]
+}
