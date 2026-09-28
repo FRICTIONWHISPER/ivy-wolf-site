@@ -16,8 +16,7 @@
       "status": "PINNED for v2",
       "kind": "place-photo",
       "best_frames": [
-        "img-0784",
-        "img-0785"
+        "img-0784"
       ],
       "means": "PIC 2026-09-25: 'NEW was Newport Laguna. Hold those pictures to later so we can publish those for Laguna.'",
       "director_note": "5 frames. Two are genuinely strong (0784 sunset over rocks, 0785 wave breaking at sunset). 0782/0783 are the same heart-hands silhouette twice. 0803 was shipping sideways - fixed."
@@ -81,15 +80,15 @@
       "id": "img-0784",
       "collection": "Laguna, Newport",
       "category": "place-photo",
-      "status": "HELD-v2-PIC-PICK",
-      "note": "best frame chosen by PIC/Director for Laguna, Newport"
+      "status": "LIVE-LAGUNA-ROTATED-FLAG",
+      "note": "FLAG for PIC morning nod \u2014 sunset over rocks, portrait (rotated 90\u00b0 CCW), kept as sole Laguna frame"
     },
     {
       "id": "img-0785",
       "collection": "Laguna, Newport",
       "category": "place-photo",
-      "status": "HELD-v2-PIC-PICK",
-      "note": "best frame chosen by PIC/Director for Laguna, Newport"
+      "status": "ARCHIVED",
+      "note": "wave breaking at sunset \u2014 archived; img-0784 kept as primary Laguna frame"
     },
     {
       "id": "img-1792",
@@ -288,6 +287,13 @@
       "location": "Over Sedona, Arizona",
       "status": "LIVE-ELIGIBLE",
       "note": "PIC 2026-09-25: 'Page 06 is not Panama - that's over Sedona.' My San Blas label was wrong."
+    },
+    {
+      "id": "img-8166-2",
+      "collection": "Mind, Body and Spirit",
+      "category": "paintings",
+      "status": "ARCHIVED",
+      "note": "warmer abstract painting \u2014 removed from MBS page; img-8204 is the sole keeper per PIC direction"
     }
   ]
 }
