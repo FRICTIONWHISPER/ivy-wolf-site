@@ -103,6 +103,42 @@
         "img-4740": "San Blas Islands, Panama — PIC-stated 2026-09-25 (corrects earlier wrong Sedona label)"
       },
       "works": []
+    },
+    {
+      "slug": "laguna",
+      "title": "Laguna, California",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-0784",
+      "place_image_stems": [
+        "img-0784",
+        "img-0785"
+      ],
+      "_place_notes": {
+        "img-0784": "Laguna Beach, California — sunset over rocks",
+        "img-0785": "Laguna Beach, California — wave breaking at sunset"
+      },
+      "commission_cta": false,
+      "works": []
+    },
+    {
+      "slug": "mind-body-spirit",
+      "title": "Mind, Body and Spirit",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-8204",
+      "place_image_stems": [
+        "img-8204",
+        "img-8166-2"
+      ],
+      "_place_notes": {
+        "img-8204": "Abstract, blue",
+        "img-8166-2": "Abstract, warm tones"
+      },
+      "commission_cta": false,
+      "works": []
     }
   ]
 }

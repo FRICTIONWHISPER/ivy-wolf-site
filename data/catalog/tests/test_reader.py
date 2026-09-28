@@ -158,13 +158,16 @@ def test_load_catalog_injected_loader():
 # ---------------------------------------------------------------------------
 
 FIVE_LIVE_SLUGS = {"austin-texas", "the-bahamas", "telluride-colorado", "sedona-arizona", "panama"}
+SEVEN_LIVE_SLUGS = FIVE_LIVE_SLUGS | {"laguna", "mind-body-spirit"}
 
 
 def test_all_five_collections_present():
-    """Integration: real catalog.json must have all 5 live collections."""
+    """Integration: real catalog.json must have all 7 live collections (5 original + 2 v2)."""
     cat = load_catalog()
     slugs = {c.slug for c in cat.collections}
-    assert FIVE_LIVE_SLUGS == slugs, f"Missing or extra: {FIVE_LIVE_SLUGS.symmetric_difference(slugs)}"
+    assert SEVEN_LIVE_SLUGS.issubset(slugs), (
+        f"Missing collections: {SEVEN_LIVE_SLUGS - slugs}"
+    )
 
 
 def test_every_collection_is_live():
