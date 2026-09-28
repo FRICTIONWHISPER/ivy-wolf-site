@@ -1,0 +1,15 @@
+{
+  "_note": "Product/price half of the catalog. Joins on image id with media-map.json. A price is HELD until the PIC sets it — never hardcoded into a page.",
+  "collections": [
+    {
+      "slug": "laguna",
+      "name": "Laguna, California",
+      "label": "Laguna, California",
+      "collection_number": 6,
+      "status": "live",
+      "images": ["img-0784", "img-0785"],
+      "price_status": "HELD",
+      "price_note": "PIC has not set a price. Do not display or invent a price."
+    }
+  ]
+}
