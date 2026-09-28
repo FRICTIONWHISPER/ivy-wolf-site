@@ -1,0 +1,108 @@
+{
+  "_schema": "./schema.json",
+  "schema_version": "1.0.0",
+  "site": "IWA",
+  "generated": "2026-09-28",
+  "_note": "Source of truth for ivy-wolf.com. Collection pages READ this; they do NOT hardcode images, prices, or edition data. Prices are HELD — reader.py suppresses display. Credit is always 'The Wolf Life'. Reusable by Fly Naked (FNK) and How2FlyPrivate (H2P) via the site-catalog-map vault plugin.",
+  "collections": [
+    {
+      "slug": "austin-texas",
+      "title": "Austin, Texas",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "8d37fd7b-a390-447c-8246-9540122912e4",
+      "place_image_stems": [
+        "8d37fd7b-a390-447c-8246-9540122912e4",
+        "img-0213",
+        "img-0337",
+        "img-0342"
+      ],
+      "_place_notes": {
+        "8d37fd7b-a390-447c-8246-9540122912e4": "New Braunfels, Austin, Texas — PIC-stated 2026-09-23",
+        "img-0213": "Lake Travis, from the air — PIC-stated 2026-09-23",
+        "img-0337": "Over Skies of Austin — PIC-stated 2026-09-23",
+        "img-0342": "Over Skies of Austin — PIC-stated 2026-09-23"
+      },
+      "works": []
+    },
+    {
+      "slug": "the-bahamas",
+      "title": "The Bahamas",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-2122",
+      "place_image_stems": [
+        "img-2122",
+        "img-1792",
+        "img-1877",
+        "img-2182"
+      ],
+      "_place_notes": {
+        "img-2122": "San Salvador, Bahamas — PIC-stated hero 2026-09-23",
+        "img-1792": "Nassau, Bahamas — PIC: keep as Bahamas collection picture",
+        "img-1877": "The Bahamas — PIC-stated 2026-09-23",
+        "img-2182": "The Bahamas, from the air — PIC-stated 2026-09-23"
+      },
+      "works": []
+    },
+    {
+      "slug": "telluride-colorado",
+      "title": "Telluride, Colorado",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-5921",
+      "place_image_stems": [
+        "img-5921"
+      ],
+      "_place_notes": {
+        "img-5921": "Telluride, Colorado — referenced in site 2026-09-28; PIC label pending"
+      },
+      "works": []
+    },
+    {
+      "slug": "sedona-arizona",
+      "title": "Sedona, Arizona",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-3216",
+      "place_image_stems": [
+        "img-3216",
+        "img-4112",
+        "img-4114",
+        "img-4115",
+        "img-5440",
+        "img-4275",
+        "img-8767"
+      ],
+      "_place_notes": {
+        "img-3216": "Sedona, Arizona — referenced in site og:image 2026-09-28; PIC label pending",
+        "img-4112": "Between Sedona and Scottsdale, Arizona — PIC-stated 2026-09-25",
+        "img-4114": "Between Sedona and Scottsdale, Arizona — PIC-stated 2026-09-25",
+        "img-4115": "Between Sedona and Scottsdale, Arizona — PIC-stated 2026-09-25",
+        "img-5440": "Sedona, Arizona — PIC-stated 2026-09-25",
+        "img-4275": "Over the skies between Scottsdale and Sedona, Arizona — PIC-stated 2026-09-25",
+        "img-8767": "Over Sedona, Arizona — PIC-corrected 2026-09-25 (was wrong San Blas label)"
+      },
+      "works": []
+    },
+    {
+      "slug": "panama",
+      "title": "Panama",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-4740",
+      "place_image_stems": [
+        "img-4740"
+      ],
+      "_place_notes": {
+        "img-4740": "San Blas Islands, Panama — PIC-stated 2026-09-25 (corrects earlier wrong Sedona label)"
+      },
+      "works": []
+    }
+  ]
+}

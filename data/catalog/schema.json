@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ivy-wolf-catalog-schema-v1",
+  "title": "IvyWolfCatalog",
+  "description": "Machine-readable catalog map for ivy-wolf.com. Source of truth for every collection, work, image stem, and product type. Prices stay HELD until the PIC sets them — never render a price whose status is 'HELD'. Reusable by Fly Naked and How2FlyPrivate via site-catalog-map (vault family website-whisper). Built 2026-09-28.",
+  "type": "object",
+  "required": ["schema_version", "site", "collections"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semver. Bump minor for new optional fields, major for breaking shape changes."
+    },
+    "site": {
+      "type": "string",
+      "description": "Site code matching image-intake-whisper/sites.json (IWA, FNK, H2P, …)"
+    },
+    "generated": {
+      "type": "string",
+      "description": "ISO-8601 date this file was written or last rebuilt."
+    },
+    "collections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["slug", "title", "status", "product_type", "credit", "works"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "URL slug matching the collections/<slug>/index.html route."
+          },
+          "title": {
+            "type": "string",
+            "description": "Display name of the collection."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["live", "forthcoming", "closed"],
+            "description": "live = published; forthcoming = announced, not yet open; closed = sold out / archived."
+          },
+          "product_type": {
+            "type": "string",
+            "enum": ["collection-limited-edition", "commission"],
+            "description": "collection-limited-edition: a fixed number of originals released once, never reproduced. commission: bespoke works. The two are NEVER mixed on a collection page."
+          },
+          "credit": {
+            "type": "string",
+            "description": "Always 'The Wolf Life'. No photographer name, no PIC name."
+          },
+          "hero_stem": {
+            "type": "string",
+            "description": "Stem (no width suffix, no .jpg) of the hero place photograph. The site appends -{width}w.jpg to build srcset URLs."
+          },
+          "place_image_stems": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "All place photograph stems assigned to this collection. Order: hero first."
+          },
+          "works": {
+            "type": "array",
+            "description": "Artwork records (paintings) belonging to this collection. Empty until PHASE-5.0 cataloging.",
+            "items": {
+              "type": "object",
+              "required": ["id", "title", "size_in", "size_cm", "image_stems", "price", "credit", "product_type"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Unique work identifier, e.g. IWA-AT-001."
+                },
+                "title": {
+                  "type": "string",
+                  "description": "Work title. 'TITLE HELD' while PIC hasn't named it."
+                },
+                "size_in": {
+                  "type": "string",
+                  "description": "Dimensions in inches, e.g. '20 × 28 in'. 'HELD' until measured."
+                },
+                "size_cm": {
+                  "type": "string",
+                  "description": "Dimensions in centimetres, e.g. '50 × 70 cm'. 'HELD' until measured."
+                },
+                "image_stems": {
+                  "type": "array",
+                  "items": {"type": "string"},
+                  "description": "Artwork photograph stems. Empty until PHASE-5.0 photography."
+                },
+                "edition_size": {
+                  "type": ["integer", "null"],
+                  "description": "Total number of originals in this edition. null = not yet set by PIC."
+                },
+                "price": {
+                  "type": "string",
+                  "description": "Dollar amount OR 'HELD'. Never invent a price. Reader must suppress display when value is 'HELD'."
+                },
+                "credit": {
+                  "type": "string",
+                  "description": "Always 'The Wolf Life'."
+                },
+                "product_type": {
+                  "type": "string",
+                  "enum": ["collection-limited-edition", "commission"],
+                  "description": "Inherits from collection. collection-limited-edition only — commissions are never items in a collection."
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["available", "sold", "reserved", "not_for_sale"],
+                  "description": "Availability."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
