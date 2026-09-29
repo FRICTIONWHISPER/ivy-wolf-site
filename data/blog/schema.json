@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IWA blog-map",
+  "description": "The journal recall map. Each post joins to a collection (collection_slug), art (art_stems/hero_stem), a work (work_id), and its story doc. Keeps post <-> collection <-> story <-> art matched. Sibling of data/catalog/ schema.",
+  "type": "object",
+  "required": ["schema_version", "site", "blog_name", "posts"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "site": { "type": "string" },
+    "blog_name": { "type": "string" },
+    "generated": { "type": "string" },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "slug", "title", "status", "collection_slug", "art_stems", "credit"],
+        "properties": {
+          "id": { "type": "string" },
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "status": { "type": "string", "enum": ["draft", "pinned", "live", "archived"] },
+          "doc": { "type": "string" },
+          "kind": { "type": "string" },
+          "collection_slug": { "type": "string" },
+          "work_id": { "type": "string" },
+          "hero_stem": { "type": "string" },
+          "art_stems": { "type": "array", "items": { "type": "string" } },
+          "credit": { "type": "string" },
+          "no_names": { "type": "boolean" },
+          "story_source": { "type": "string" },
+          "supersedes": { "type": "array", "items": { "type": "string" } },
+          "summary": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "site": "IWA",
+  "blog_name": "The Ivy Wolf Life",
+  "generated": "2026-09-29",
+  "_note": "Recall map for the journal. Every post joins to its collection (collection_slug -> catalog.json), its art (art_stems -> media-map.json), and its story doc. Read this before writing, moving, or crossposting any post so the post, the collection, the story and the art stay matched. Sibling of data/catalog/ (site-catalog-map).",
+  "posts": [
+    {
+      "id": "post-0001",
+      "slug": "the-best-day-of-my-life",
+      "title": "The Best Day of My Life",
+      "status": "draft",
+      "doc": "DOC-2110",
+      "kind": "commission-story",
+      "collection_slug": "austin-texas",
+      "work_id": "austin-cotton-bowl-2023",
+      "work_id_status": "pending-catalog-entry",
+      "hero_stem": "img-7086",
+      "hero_stem_status": "pending-PIC-image",
+      "art_stems": ["img-7086"],
+      "credit": "The Wolf Life",
+      "no_names": true,
+      "story_source": "wolf-event-runtime/BLOG-DRAFT_DOC-2110_the-best-day-of-my-life_v3_real-day.md",
+      "supersedes": ["DOC-2095", "DOC-2107", "DOC-2109"],
+      "summary": "A father flew his kids at first light to the Oklahoma-Texas game (Cotton Bowl, 2023); at the end of a long day his son said it was the best day of his life without knowing he was heard. The first commissioned canvas; opens the journal."
+    }
+  ]
+}
