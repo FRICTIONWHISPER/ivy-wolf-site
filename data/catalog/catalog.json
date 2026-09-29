@@ -2,30 +2,9 @@
   "_schema": "./schema.json",
   "schema_version": "1.0.0",
   "site": "IWA",
-  "generated": "2026-09-28",
+  "generated": "2026-09-29",
   "_note": "Source of truth for ivy-wolf.com. Collection pages READ this; they do NOT hardcode images, prices, or edition data. Prices are HELD — reader.py suppresses display. Credit is always 'The Wolf Life'. Reusable by Fly Naked (FNK) and How2FlyPrivate (H2P) via the site-catalog-map vault plugin.",
   "collections": [
-    {
-      "slug": "austin-texas",
-      "title": "Austin, Texas",
-      "status": "live",
-      "product_type": "collection-limited-edition",
-      "credit": "The Wolf Life",
-      "hero_stem": "8d37fd7b-a390-447c-8246-9540122912e4",
-      "place_image_stems": [
-        "8d37fd7b-a390-447c-8246-9540122912e4",
-        "img-0213",
-        "img-0337",
-        "img-0342"
-      ],
-      "_place_notes": {
-        "8d37fd7b-a390-447c-8246-9540122912e4": "New Braunfels, Austin, Texas — PIC-stated 2026-09-23",
-        "img-0213": "Lake Travis, from the air — PIC-stated 2026-09-23",
-        "img-0337": "Over Skies of Austin — PIC-stated 2026-09-23",
-        "img-0342": "Over Skies of Austin — PIC-stated 2026-09-23"
-      },
-      "works": []
-    },
     {
       "slug": "the-bahamas",
       "title": "The Bahamas",
@@ -103,6 +82,59 @@
         "img-4740": "San Blas Islands, Panama — PIC-stated 2026-09-25 (corrects earlier wrong Sedona label)"
       },
       "works": []
+    },
+    {
+      "slug": "mind-body-spirit",
+      "title": "Mind, Body & Spirit",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "img-8204",
+      "place_image_stems": [
+        "img-8204",
+        "img-8166-2"
+      ],
+      "_place_notes": {
+        "img-8204": "MBS abstract — the blue frame (display) — PIC-stated",
+        "img-8166-2": "MBS abstract — the LIGHT frame — commissioned art, blog BLG-02 Angels and Demons — PIC 2026-09-29"
+      },
+      "_kind": "paintings (abstract) — a special collection that is also commissioned art",
+      "works": []
     }
-  ]
+  ],
+  "commissioned_art": [
+    {
+      "id": "BLG-01",
+      "title": "The Best Day of My Life",
+      "image_stem": "img-7086",
+      "subject": "The Cotton Bowl, 2023 - Oklahoma Sooners v Texas",
+      "surface": "services+blog",
+      "credit": "The Wolf Life",
+      "no_reproduction": true,
+      "_note": "PIC 2026-09-29: Austin is not a collection; this is the commissioned art. Blog BLG-01."
+    },
+    {
+      "id": "BLG-02",
+      "title": "Angels and Demons",
+      "image_stem": "img-8166-2",
+      "subject": "Mind, Body & Spirit abstract — the light frame",
+      "surface": "blog+collection",
+      "credit": "The Wolf Life",
+      "no_reproduction": true,
+      "_note": "PIC 2026-09-29: MBS is a collection AND commissioned art. Blog BLG-02. Light frame (not the blue)."
+    }
+  ],
+  "_dissolved_collections": {
+    "austin-texas": {
+      "dissolved": "2026-09-29",
+      "reason": "PIC: Austin, Texas is not a collection; the Cotton Bowl is commissioned art (BLG-01).",
+      "held_aerials": [
+        "8d37fd7b-a390-447c-8246-9540122912e4",
+        "img-0213",
+        "img-0337",
+        "img-0342"
+      ],
+      "_note": "Four aerial place-photos HELD pending PIC — not deleted, no home yet."
+    }
+  }
 }

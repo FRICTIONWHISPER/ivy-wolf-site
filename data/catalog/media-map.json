@@ -4,12 +4,13 @@
   "source_of_truth": "PIC labels (pic_labels.json). Nothing inferred.",
   "ingest_rule": "New uploads land in a DATED COMMITTED folder: uploads/COMMITTED/YYYY-MM-DD/<NN | COLLECTION>/ (the PIC pipe convention, e.g. '03 | MIND, BODY, SPIRIT'). Each image is numbered + labeled, then APPENDED to this map. An image is never published until it appears here. A raw drop with no date folder is not committed.",
   "collection_roster_live": [
-    "Austin, Texas",
     "The Bahamas",
     "Telluride, Colorado",
     "Sedona, Arizona",
-    "Panama"
+    "Panama",
+    "Mind, Body and Spirit"
   ],
+  "_roster_change_2026-09-29": "PIC 2026-09-29: 'Austin, Texas is NOT a collection.' Austin dissolved as a place-collection; its Cotton Bowl painting is commissioned art (BLG-01 'The Best Day of My Life', img-7086). Mind, Body & Spirit promoted to a LIVE collection AND commissioned art (BLG-02 'Angels and Demons', img-8166-2 — the light frame, not the blue). The four Austin aerial place-photos are HELD pending PIC.",
   "v2_collections": {
     "Laguna, Newport": {
       "folder": "IWA | NEW | 01",
@@ -50,28 +51,32 @@
   "media": [
     {
       "id": "8d37fd7b-a390-447c-8246-9540122912e4",
-      "collection": "Austin, Texas",
+      "collection": null,
+      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
       "category": "place-photo",
       "location": "New Braunfels, Austin, Texas",
       "status": "SELECT-KEEP"
     },
     {
       "id": "img-0213",
-      "collection": "Austin, Texas",
+      "collection": null,
+      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
       "category": "place-photo",
       "location": "Lake Travis, from the air",
       "status": "SELECT-KEEP"
     },
     {
       "id": "img-0337",
-      "collection": "Austin, Texas",
+      "collection": null,
+      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
       "category": "place-photo",
       "location": "Over Skies of Austin",
       "status": "SELECT-KEEP"
     },
     {
       "id": "img-0342",
-      "collection": "Austin, Texas",
+      "collection": null,
+      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
       "category": "place-photo",
       "location": "Over Skies of Austin",
       "status": "SELECT-KEEP"
@@ -81,14 +86,14 @@
       "collection": "Laguna, Newport",
       "category": "place-photo",
       "status": "LIVE-LAGUNA-ROTATED-FLAG",
-      "note": "FLAG for PIC morning nod \u2014 sunset over rocks, portrait (rotated 90\u00b0 CCW), kept as sole Laguna frame"
+      "note": "FLAG for PIC morning nod — sunset over rocks, portrait (rotated 90° CCW), kept as sole Laguna frame"
     },
     {
       "id": "img-0785",
       "collection": "Laguna, Newport",
       "category": "place-photo",
       "status": "ARCHIVED",
-      "note": "wave breaking at sunset \u2014 archived; img-0784 kept as primary Laguna frame"
+      "note": "wave breaking at sunset — archived; img-0784 kept as primary Laguna frame"
     },
     {
       "id": "img-1792",
@@ -253,11 +258,13 @@
     },
     {
       "id": "img-7086",
-      "category": "painting",
+      "category": "commissioned-art",
       "location": "The Cotton Bowl, 2023 - Oklahoma Sooners v Texas",
-      "surface": "services",
-      "status": "PAINTING",
-      "note": "PIC 2026-09-25: paintings OUT of the collections. Cotton Bowl goes to /services as the commission proof."
+      "surface": "services+blog",
+      "blog": "BLG-01",
+      "blog_title": "The Best Day of My Life",
+      "status": "COMMISSIONED-LIVE",
+      "note": "PIC 2026-09-29: Austin is not a collection; this Cotton Bowl painting is THE commissioned art. Blog BLG-01 'The Best Day of My Life'. Image now in site assets. Renders on /services as the commission proof and as the BLG-01 hero. Never greyscaled."
     },
     {
       "id": "img-7235",
@@ -291,9 +298,12 @@
     {
       "id": "img-8166-2",
       "collection": "Mind, Body and Spirit",
-      "category": "paintings",
-      "status": "ARCHIVED",
-      "note": "warmer abstract painting \u2014 removed from MBS page; img-8204 is the sole keeper per PIC direction"
+      "category": "commissioned-art",
+      "status": "COMMISSIONED-LIVE-LIGHT",
+      "surface": "blog+collection",
+      "blog": "BLG-02",
+      "blog_title": "Angels and Demons",
+      "note": "PIC 2026-09-29: the LIGHT frame (not the blue 8204/8203). Blog BLG-02 Angels and Demons. MBS is a collection AND commissioned art. Image now in site assets. Un-archived per PIC direction."
     }
   ]
 }

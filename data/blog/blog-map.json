@@ -3,26 +3,45 @@
   "site": "IWA",
   "blog_name": "The Ivy Wolf Life",
   "generated": "2026-09-29",
-  "_note": "Recall map for the journal. Every post joins to its collection (collection_slug -> catalog.json), its art (art_stems -> media-map.json), and its story doc. Read this before writing, moving, or crossposting any post so the post, the collection, the story and the art stay matched. Sibling of data/catalog/ (site-catalog-map).",
+  "_note": "Recall map for the journal. Every post joins to its collection (collection_slug -> catalog.json), its art (art_stems -> media-map.json), its commissioned work, and its story doc. Read this before writing, moving, or crossposting any post so the post, the collection, the story and the art stay matched. Sibling of data/catalog/ (site-catalog-map).",
   "posts": [
     {
-      "id": "post-0001",
+      "id": "BLG-01",
       "slug": "the-best-day-of-my-life",
       "title": "The Best Day of My Life",
       "status": "draft",
       "doc": "DOC-2110",
-      "kind": "commission-story",
-      "collection_slug": "austin-texas",
+      "kind": "commissioned-art",
+      "collection_slug": null,
+      "commissioned": true,
       "work_id": "austin-cotton-bowl-2023",
-      "work_id_status": "pending-catalog-entry",
       "hero_stem": "img-7086",
-      "hero_stem_status": "pending-PIC-image",
       "art_stems": ["img-7086"],
+      "folder": "data/blog/BLG-01",
       "credit": "The Wolf Life",
       "no_names": true,
-      "story_source": "wolf-event-runtime/BLOG-DRAFT_DOC-2110_the-best-day-of-my-life_v3_real-day.md",
+      "no_reproduction": true,
+      "story_source": "data/blog/BLG-01/story.md",
       "supersedes": ["DOC-2095", "DOC-2107", "DOC-2109"],
-      "summary": "A father flew his kids at first light to the Oklahoma-Texas game (Cotton Bowl, 2023); at the end of a long day his son said it was the best day of his life without knowing he was heard. The first commissioned canvas; opens the journal."
+      "summary": "A father flew his kids at first light to the Oklahoma-Texas game (Cotton Bowl, 2023); at the end of a long day his son said it was the best day of his life without knowing he was heard. The first commissioned canvas. Austin is NOT a collection - this is commissioned art."
+    },
+    {
+      "id": "BLG-02",
+      "slug": "angels-and-demons",
+      "title": "Angels and Demons",
+      "status": "draft-first-pass",
+      "kind": "commissioned-art",
+      "collection_slug": "mind-body-spirit",
+      "commissioned": true,
+      "work_id": "mbs-angels-and-demons",
+      "hero_stem": "img-8166-2",
+      "art_stems": ["img-8166-2"],
+      "folder": "data/blog/BLG-02",
+      "credit": "The Wolf Life",
+      "no_names": true,
+      "no_reproduction": true,
+      "story_source": "data/blog/BLG-02/story.md",
+      "summary": "Mind, Body & Spirit - the LIGHT abstract (img-8166-2, not the blue). Two faces, angel and demon, light and dark. MBS is a collection AND commissioned art. First-pass story pending PIC meaning."
     }
   ]
 }
