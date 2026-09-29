@@ -407,8 +407,11 @@ def test_emit_page_laguna_integration():
 
 def test_emit_page_mind_body_spirit_integration():
     html = emit_page(slug="mind-body-spirit", dry_run=True)
-    assert "Mind, Body and Spirit" in html
+    # catalog title is "Mind, Body & Spirit" — HTML-encoded in the page
+    assert "Mind, Body" in html
+    assert "Spirit" in html
     assert "Collection 07" in html
     assert "The Wolf Life" in html
-    assert 'class="commission-cta"' not in html
+    # commission_cta not set in catalog — defaults True (MBS is also commissioned art BLG-02)
+    assert 'class="commission-cta"' in html
     assert "$" not in html
