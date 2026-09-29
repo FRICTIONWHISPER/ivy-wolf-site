@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Ivy Wolf Life — Art Journal by Ivy Wolf</title>
-  <meta name="description" content="The Ivy Wolf Life — Ivy Wolf's journal on process, place, and the practice of painting.">
+  <title>The Ivy Wolf Life &mdash; Art Journal</title>
+  <meta name="description" content="The Ivy Wolf Life &mdash; a journal on process, place, and the practice of painting.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     :root {
       --ink:         #111111;
       --paper:       #FFFFFF;
-      --accent:      #7C5CFF;  /* small accent only — never buttons, never prices */
+      --accent:      #7C5CFF;  /* small accent only — never on buttons */
       --muted-dark:  #757575;
       --muted-light: #555555;
       --band:        #F1F1F1;
@@ -91,166 +91,84 @@
     }
     .nav-links a:hover { color: var(--ink); }
 
-    /* ── PAGE HEAD ───────────────────────────────────────────────────────────── */
-    .page-head {
-      padding: clamp(64px, 9vw, 118px) 2.5rem clamp(48px, 6vw, 72px);
-      max-width: var(--wrap);
-      margin: 0 auto;
-    }
-    .page-head .eyebrow {
-      font-size: .6875rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-      margin-bottom: 1.25rem;
-    }
-    .page-head h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.1;
-      margin-bottom: 1.25rem;
-    }
-    .page-head p {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--muted-light);
-      max-width: 540px;
-    }
-    .page-rule { display: block; width: 100%; height: 1px; background: var(--rule); }
-
-    /* ── LAYOUT WRAP ─────────────────────────────────────────────────────────── */
-    .wrap {
-      max-width: var(--wrap);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-    }
-    .section {
-      padding: clamp(64px, 9vw, 118px) var(--gutter);
-    }
-
-    /* ── GRID ────────────────────────────────────────────────────────────────── */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      border: 1px solid var(--rule);
-      padding: 2rem;
-    }
-    .card .card-eyebrow {
-      font-size: .6875rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: .75rem;
-    }
-    .card h3 {
-      font-size: 1.375rem;
-      margin-bottom: .75rem;
-    }
-    .card p {
-      font-size: .875rem;
-      color: var(--muted-light);
-      line-height: 1.65;
-      margin-bottom: 1.25rem;
-    }
-    .card .card-link {
-      font-size: .8125rem;
-      font-weight: 500;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--muted-light);
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: .25rem;
-    }
-    .card .card-link:hover { color: var(--ink); border-color: var(--ink); }
-
-    /* ── COMING SOON card ────────────────────────────────────────────────────── */
-    .card.coming-soon { opacity: .6; }
-
-    /* ── PLACEHOLDER tile ────────────────────────────────────────────────────── */
-    .placeholder-tile {
+    /* ── HERO ────────────────────────────────────────────────────────────────── */
+    .post-hero {
       width: 100%;
-      padding-top: 65%;
-      background: var(--band);
-      border: 1px solid var(--rule);
+      max-height: 600px;
+      overflow: hidden;
       position: relative;
-      margin-bottom: 1.5rem;
     }
-    .placeholder-tile-label {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .75rem;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-    }
-
-    /* ── PLATE (collection teaser row) ──────────────────────────────────────── */
-    .plate {
-      display: grid;
-      grid-template-columns: 1.55fr 1fr;
-      gap: 3rem;
-      align-items: center;
-      margin-bottom: 4rem;
-      padding-bottom: 4rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .plate.reverse { grid-template-columns: 1fr 1.55fr; }
-    .plate.reverse .plate-img { order: 2; }
-    .plate.reverse .plate-body { order: 1; }
-    .plate-img img, .plate-img .plate-placeholder {
+    .post-hero img {
       width: 100%;
-      aspect-ratio: 4/3;
+      height: 100%;
       object-fit: cover;
-      filter: grayscale(1) contrast(1.06);
-      background: var(--band);
+      max-height: 600px;
     }
-    .plate-placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .75rem;
+    .post-hero figcaption {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.25rem;
+      font-size: .625rem;
       letter-spacing: .1em;
       text-transform: uppercase;
-      color: var(--muted-dark);
-      border: 1px solid var(--rule);
+      color: rgba(255,255,255,0.75);
     }
-    .plate-eyebrow {
-      font-size: .6875rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: .75rem;
-    }
-    .plate-title { font-size: 1.5rem; margin-bottom: .75rem; }
-    .plate-desc { font-size: .9375rem; line-height: 1.65; color: var(--muted-light); margin-bottom: 1.5rem; }
 
-    /* ── PRICES TABLE ─────────────────────────────────────────────────────────── */
-    .prices-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: .875rem;
+    /* ── POST HEAD ───────────────────────────────────────────────────────────── */
+    .post-head {
+      padding: clamp(48px, 7vw, 96px) var(--gutter) 2rem;
+      max-width: 680px;
+      margin: 0 auto;
     }
-    .prices-table th, .prices-table td {
-      padding: .875rem 1rem;
-      border: 1px solid var(--rule);
-      text-align: left;
-    }
-    .prices-table th {
-      font-weight: 600;
-      font-size: .6875rem;
+    .post-head .post-meta {
+      font-size: .75rem;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: var(--muted-light);
-      background: var(--band);
+      color: var(--muted-dark);
+      margin-bottom: 1rem;
     }
-    .prices-table td:last-child {
-      font-family: 'Instrument Serif', Georgia, serif;
+    .post-head h1 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .post-head .lede {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--muted-light);
+    }
+
+    /* ── LAYOUT ──────────────────────────────────────────────────────────────── */
+    .page-rule {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* ── POST BODY ───────────────────────────────────────────────────────────── */
+    .post-body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem var(--gutter) clamp(64px, 9vw, 118px);
+    }
+    .post-body p {
       font-size: 1rem;
+      line-height: 1.8;
+      color: var(--muted-light);
+      margin-bottom: 1.5rem;
+    }
+    .post-body h2 {
+      font-size: 1.375rem;
+      margin: 2rem 0 .75rem;
+      color: var(--ink);
+    }
+    .post-body em {
+      font-style: italic;
+    }
+    .post-body strong {
+      font-weight: 600;
+      color: var(--ink);
     }
 
     /* ── COMMISSION CTA ───────────────────────────────────────────────────────── */
@@ -262,100 +180,6 @@
     .commission-cta h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1rem; }
     .commission-cta p { font-size: .9375rem; color: var(--muted-light); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
     .commission-cta .pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-    /* ── BLOG POST LIST ───────────────────────────────────────────────────────── */
-    .post-list { list-style: none; }
-    .post-list li {
-      display: flex;
-      gap: 2rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--rule);
-      align-items: baseline;
-    }
-    .post-date {
-      font-size: .75rem;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-      min-width: 90px;
-    }
-    .post-title { font-size: 1rem; font-weight: 500; margin-bottom: .25rem; }
-    .post-summary { font-size: .875rem; color: var(--muted-light); line-height: 1.6; }
-    .post-list li a:hover .post-title { color: var(--muted-dark); }
-
-    /* ── BLOG POST BODY ───────────────────────────────────────────────────────── */
-    .post-head { padding: clamp(48px, 7vw, 96px) var(--gutter) 2rem; max-width: 680px; margin: 0 auto; }
-    .post-head .post-meta { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-dark); margin-bottom: 1rem; }
-    .post-head h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.15; margin-bottom: 1.25rem; }
-    .post-head .lede { font-size: 1.0625rem; line-height: 1.7; color: var(--muted-light); }
-    .post-body { max-width: 680px; margin: 0 auto; padding: 3rem var(--gutter) clamp(64px, 9vw, 118px); }
-    .post-body p { font-size: 1rem; line-height: 1.8; color: var(--muted-light); margin-bottom: 1.5rem; }
-    .post-body h2 { font-size: 1.375rem; margin: 2rem 0 .75rem; }
-
-    /* ── ABOUT SPLIT ─────────────────────────────────────────────────────────── */
-    .about-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-      padding: clamp(64px, 9vw, 118px) var(--gutter);
-      max-width: var(--wrap);
-      margin: 0 auto;
-    }
-    .about-portrait { background: var(--band); aspect-ratio: 3/4; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted-dark); }
-    .about-text h2 { font-size: clamp(1.375rem, 3vw, 2rem); margin-bottom: 1.5rem; line-height: 1.2; }
-    .about-text p { font-size: .9375rem; line-height: 1.75; color: var(--muted-light); margin-bottom: 1.25rem; }
-    .pullquote {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-style: italic;
-      font-size: 1.25rem;
-      line-height: 1.55;
-      color: var(--ink);
-      border-left: 2px solid var(--ink);
-      padding: .75rem 0 .75rem 1.5rem;
-      margin: 2rem 0;
-    }
-
-    /* ── FORM ────────────────────────────────────────────────────────────────── */
-    .lead-form { max-width: 540px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) var(--gutter); }
-    .form-field { margin-bottom: 1.5rem; }
-    .form-field label { display: block; font-size: .75rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-light); margin-bottom: .5rem; }
-    .form-field input, .form-field textarea {
-      width: 100%;
-      padding: .875rem 1rem;
-      border: 1px solid var(--rule);
-      background: var(--paper);
-      font-family: inherit;
-      font-size: .9375rem;
-      color: var(--ink);
-    }
-    .form-field input:focus, .form-field textarea:focus {
-      outline: none;
-      border-color: var(--ink);
-    }
-    .form-field textarea { resize: vertical; min-height: 140px; }
-
-    /* ── DARK PAGE (shop) ────────────────────────────────────────────────────── */
-    .dark-hold {
-      text-align: center;
-      padding: clamp(80px, 12vw, 160px) var(--gutter);
-    }
-    .dark-hold .eyebrow { font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-dark); margin-bottom: 1.5rem; }
-    .dark-hold h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: 1.25rem; }
-    .dark-hold p { font-size: .9375rem; color: var(--muted-light); max-width: 420px; margin: 0 auto 2rem; line-height: 1.7; }
-
-    /* ── THANK YOU ───────────────────────────────────────────────────────────── */
-    .confirmation {
-      text-align: center;
-      padding: clamp(80px, 12vw, 160px) var(--gutter);
-    }
-    .confirmation h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: 1.25rem; }
-    .confirmation p { font-size: .9375rem; color: var(--muted-light); max-width: 420px; margin: 0 auto 2rem; line-height: 1.7; }
-
-    /* ── LEGAL ───────────────────────────────────────────────────────────────── */
-    .legal-body { max-width: 680px; margin: 0 auto; padding: 3rem var(--gutter) clamp(64px, 9vw, 118px); }
-    .legal-body h2 { font-size: 1.125rem; font-weight: 600; margin: 2rem 0 .75rem; }
-    .legal-body p { font-size: .875rem; line-height: 1.75; color: var(--muted-light); margin-bottom: 1rem; }
 
     /* ── FOOTER ──────────────────────────────────────────────────────────────── */
     .site-footer {
@@ -393,34 +217,62 @@
         font-size: .8125rem; color: var(--muted-light);
       }
       .nav-menu-panel a:hover { color: var(--ink); }
-      .plate, .plate.reverse { grid-template-columns: 1fr; }
-      .plate.reverse .plate-img, .plate.reverse .plate-body { order: unset; }
-      .about-split { grid-template-columns: 1fr; }
       .site-footer { flex-direction: column; align-items: flex-start; }
     }
+
+    /* ── POST LIST ─────────────────────────────────────────────────────────── */
+    .post-list { list-style: none; }
+    .post-list li {
+      display: flex;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: baseline;
+    }
+    .post-date {
+      font-size: .75rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted-dark);
+      min-width: 90px;
+    }
+    .post-title { font-size: 1rem; font-weight: 500; margin-bottom: .25rem; }
+    .post-summary { font-size: .875rem; color: var(--muted-light); line-height: 1.6; }
+    .post-list li a:hover .post-title { color: var(--muted-dark); }
+    .page-head {
+      padding: clamp(64px, 9vw, 118px) 2.5rem clamp(48px, 6vw, 72px);
+      max-width: var(--wrap);
+      margin: 0 auto;
+    }
+    .page-head .eyebrow {
+      font-size: .6875rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted-dark);
+      margin-bottom: 1.25rem;
+    }
+    .page-head h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 1.25rem; }
+    .page-head p { font-size: 1rem; line-height: 1.7; color: var(--muted-light); max-width: 540px; }
+    .page-rule { display: block; width: 100%; height: 1px; background: var(--rule); }
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+    .section { padding: clamp(64px, 9vw, 118px) var(--gutter); }
   </style>
 
-  <!-- SEO: canonical · open-graph · schema ──────────────────────────────── -->
+  <!-- SEO ──────────────────────────────────────────────────────────────────── -->
   <link rel="canonical" href="https://ivy-wolf.com/journal">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ivy-wolf.com/journal">
-  <meta property="og:title" content="The Ivy Wolf Life — Art Journal by Ivy Wolf">
-  <meta property="og:description" content="The Ivy Wolf Life — Ivy Wolf's journal on process, place, and the practice of painting.">
-  <meta property="og:image" content="https://ivy-wolf.com/assets/photo-library/img-7235-1200w.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="800">
+  <meta property="og:title" content="The Ivy Wolf Life &mdash; Art Journal">
+  <meta property="og:description" content="The Ivy Wolf Life &mdash; a journal on process, place, and the practice of painting.">
   <meta property="og:site_name" content="Ivy Wolf Art">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Ivy Wolf Life — Art Journal by Ivy Wolf">
-  <meta name="twitter:description" content="The Ivy Wolf Life — Ivy Wolf's journal on process, place, and the practice of painting.">
-  <meta name="twitter:image" content="https://ivy-wolf.com/assets/photo-library/img-7235-1200w.jpg">
+  <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "Blog",
   "url": "https://ivy-wolf.com/journal",
   "name": "The Ivy Wolf Life",
-  "description": "A journal about art, process, and place by Ivy Wolf Art.",
+  "description": "A journal on process, place, and the practice of painting.",
   "publisher": {
     "@id": "https://ivy-wolf.com/#organization"
   }
@@ -453,12 +305,27 @@
   <div class="page-head">
     <p class="eyebrow">Journal</p>
     <h1 class="display">The Ivy Wolf Life</h1>
-    <p>Process, place, and the practice of painting — Ivy's voice on the work and the world behind it.</p>
+    <p>Process, place, and the practice of painting &mdash; a journal on the work and the world behind it.</p>
   </div>
   <span class="page-rule"></span>
   <section class="section">
     <div class="wrap" style="max-width:720px;margin:0 auto;">
+      <!-- POST_LIST_REGION_START -->
       <ul class="post-list">
+    <li>
+      <span class="post-date">September 2026</span>
+      <a href="/journal/the-best-day-of-my-life">
+        <p class="post-title">The Best Day of My Life</p>
+        <p class="post-summary">A father flew his kids at first light to the Oklahoma-Texas game (Cotton Bowl, 2023); at the end of a long day his son said it was the best day of his life without knowing he was heard. The first commissioned canvas. Austin is NOT a collection - this is commissioned art.</p>
+      </a>
+    </li>
+    <li>
+      <span class="post-date">The Ivy Wolf Life</span>
+      <a href="/journal/angels-and-demons">
+        <p class="post-title">Angels and Demons</p>
+        <p class="post-summary">Mind, Body &amp; Spirit - the LIGHT abstract (img-8166-2, not the blue). Two faces, angel and demon, light and dark. MBS is a collection AND commissioned art. First-pass story pending PIC meaning.</p>
+      </a>
+    </li>
     <li>
       <span class="post-date">September 2026</span>
       <a href="/journal/behind-the-first-canvas">
@@ -467,6 +334,7 @@
       </a>
     </li>
       </ul>
+      <!-- POST_LIST_REGION_END -->
     </div>
   </section>
   <footer class="site-footer">
