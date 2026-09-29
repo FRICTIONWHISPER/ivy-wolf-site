@@ -4,13 +4,14 @@
   "source_of_truth": "PIC labels (pic_labels.json). Nothing inferred.",
   "ingest_rule": "New uploads land in a DATED COMMITTED folder: uploads/COMMITTED/YYYY-MM-DD/<NN | COLLECTION>/ (the PIC pipe convention, e.g. '03 | MIND, BODY, SPIRIT'). Each image is numbered + labeled, then APPENDED to this map. An image is never published until it appears here. A raw drop with no date folder is not committed.",
   "collection_roster_live": [
+    "Austin, Texas",
     "The Bahamas",
     "Telluride, Colorado",
     "Sedona, Arizona",
     "Panama",
     "Mind, Body and Spirit"
   ],
-  "_roster_change_2026-09-29": "PIC 2026-09-29: 'Austin, Texas is NOT a collection.' Austin dissolved as a place-collection; its Cotton Bowl painting is commissioned art (BLG-01 'The Best Day of My Life', img-7086). Mind, Body & Spirit promoted to a LIVE collection AND commissioned art (BLG-02 'Angels and Demons', img-8166-2 — the light frame, not the blue). The four Austin aerial place-photos are HELD pending PIC.",
+  "_roster_change_2026-09-29": "PIC 2026-09-29: Austin, Texas IS a collection (an earlier dissolution was my error, reverted). Its aerials (New Braunfels, San Marcos, Lake Travis, ~200mi of Austin) stay mapped to Austin. Only the Cotton Bowl PAINTING (img-7086) is commissioned art (BLG-01). Mind, Body & Spirit is also a live collection + commissioned art (BLG-02, img-8166-2 the light frame).",
   "v2_collections": {
     "Laguna, Newport": {
       "folder": "IWA | NEW | 01",
@@ -51,32 +52,29 @@
   "media": [
     {
       "id": "8d37fd7b-a390-447c-8246-9540122912e4",
-      "collection": null,
-      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
+      "collection": "Austin, Texas",
       "category": "place-photo",
       "location": "New Braunfels, Austin, Texas",
-      "status": "SELECT-KEEP"
+      "status": "SELECT-KEEP",
+      "future_blog": "San Marcos / New Braunfels River (planned)"
     },
     {
       "id": "img-0213",
-      "collection": null,
-      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
+      "collection": "Austin, Texas",
       "category": "place-photo",
       "location": "Lake Travis, from the air",
       "status": "SELECT-KEEP"
     },
     {
       "id": "img-0337",
-      "collection": null,
-      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
+      "collection": "Austin, Texas",
       "category": "place-photo",
       "location": "Over Skies of Austin",
       "status": "SELECT-KEEP"
     },
     {
       "id": "img-0342",
-      "collection": null,
-      "_dissolved": "Austin, Texas dissolved as a collection (PIC 2026-09-29) — aerial place-photo HELD pending PIC",
+      "collection": "Austin, Texas",
       "category": "place-photo",
       "location": "Over Skies of Austin",
       "status": "SELECT-KEEP"

@@ -6,6 +6,28 @@
   "_note": "Source of truth for ivy-wolf.com. Collection pages READ this; they do NOT hardcode images, prices, or edition data. Prices are HELD — reader.py suppresses display. Credit is always 'The Wolf Life'. Reusable by Fly Naked (FNK) and How2FlyPrivate (H2P) via the site-catalog-map vault plugin.",
   "collections": [
     {
+      "slug": "austin-texas",
+      "title": "Austin, Texas",
+      "status": "live",
+      "product_type": "collection-limited-edition",
+      "credit": "The Wolf Life",
+      "hero_stem": "8d37fd7b-a390-447c-8246-9540122912e4",
+      "place_image_stems": [
+        "8d37fd7b-a390-447c-8246-9540122912e4",
+        "img-0213",
+        "img-0337",
+        "img-0342"
+      ],
+      "_place_notes": {
+        "8d37fd7b-a390-447c-8246-9540122912e4": "New Braunfels, Austin, Texas — PIC-stated; reserved for a future blog: the San Marcos / New Braunfels River",
+        "img-0213": "Lake Travis, from the air — PIC-stated",
+        "img-0337": "Over Skies of Austin — PIC-stated",
+        "img-0342": "Over Skies of Austin — PIC-stated"
+      },
+      "_scope": "Austin, Texas = Austin and anything within ~200 miles: New Braunfels, San Marcos, Lake Travis, etc. (PIC 2026-09-29)",
+      "works": []
+    },
+    {
       "slug": "the-bahamas",
       "title": "The Bahamas",
       "status": "live",
@@ -124,17 +146,5 @@
       "_note": "PIC 2026-09-29: MBS is a collection AND commissioned art. Blog BLG-02. Light frame (not the blue)."
     }
   ],
-  "_dissolved_collections": {
-    "austin-texas": {
-      "dissolved": "2026-09-29",
-      "reason": "PIC: Austin, Texas is not a collection; the Cotton Bowl is commissioned art (BLG-01).",
-      "held_aerials": [
-        "8d37fd7b-a390-447c-8246-9540122912e4",
-        "img-0213",
-        "img-0337",
-        "img-0342"
-      ],
-      "_note": "Four aerial place-photos HELD pending PIC — not deleted, no home yet."
-    }
-  }
+  "_austin_note": "Austin, Texas IS a collection (PIC 2026-09-29 corrected an earlier wrong dissolution). Only the Cotton Bowl PAINTING (img-7086) is commissioned art (BLG-01) — the place-collection stands with its aerials."
 }
