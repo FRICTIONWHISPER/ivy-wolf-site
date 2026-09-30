@@ -171,6 +171,44 @@
       color: var(--ink);
     }
 
+    /* ── AUTHOR BLOCK ───────────────────────────────────────────────────────────── */
+    .author-block {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem var(--gutter) 3rem;
+      border-top: 1px solid var(--rule);
+    }
+    .author-block__inner {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .author-block__portrait {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--band);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .author-block__portrait img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+    }
+    .author-block__bio { flex: 1; }
+    .author-block__name {
+      font-size: .8125rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: .5rem;
+    }
+    .author-block__text {
+      font-size: .875rem;
+      line-height: 1.7;
+      color: var(--muted-light);
+    }
+
     /* ── COMMISSION CTA ───────────────────────────────────────────────────────── */
     .commission-cta {
       text-align: center;
@@ -330,6 +368,20 @@
     </p>
   </div>
   <!-- STORY_REGION_END -->
+
+  <!-- AUTHOR_REGION_START -->
+  <div class="author-block">
+    <div class="author-block__inner">
+      <div class="author-block__portrait">
+        <!-- [PIC-PENDING: about headshot] -->
+      </div>
+      <div class="author-block__bio">
+        <p class="author-block__name">Ivy Wolf</p>
+        <p class="author-block__text">Ivy Wolf is a painter who writes. She paints days to commission &mdash; one original, painted once, never reproduced &mdash; and keeps this journal about where the work comes from. [PIC backstory pending].</p>
+      </div>
+    </div>
+  </div>
+  <!-- AUTHOR_REGION_END -->
 
   <div class="commission-cta">
     <h2 class="display">Commission a work</h2>

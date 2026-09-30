@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0.0",
   "site": "IWA",
+  "image_house": true,
   "blog_name": "The Ivy Wolf Life",
   "generated": "2026-09-29",
   "_note": "Recall map for the journal. Every post joins to its collection (collection_slug -> catalog.json), its art (art_stems -> media-map.json), its commissioned work, and its story doc. Read this before writing, moving, or crossposting any post so the post, the collection, the story and the art stay matched. Sibling of data/catalog/ (site-catalog-map).",
