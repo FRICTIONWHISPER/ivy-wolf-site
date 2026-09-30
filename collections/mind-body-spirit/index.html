@@ -137,6 +137,30 @@
     .commission-cta p { font-size: .9375rem; color: var(--muted-light); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
     .commission-cta .pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
+    /* ── SIZES TABLE ─────────────────────────────────────────────────────────── */
+    .sizes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+    }
+    .sizes-table th, .sizes-table td {
+      padding: .875rem 1rem;
+      border: 1px solid var(--rule);
+      text-align: left;
+    }
+    .sizes-table th {
+      font-weight: 600;
+      font-size: .6875rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+      background: var(--band);
+    }
+    .sizes-table td:last-child {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1rem;
+    }
+
     /* ── FOOTER ──────────────────────────────────────────────────────────────── */
     .site-footer {
       border-top: 1px solid var(--rule);
@@ -266,6 +290,25 @@
     </div>
   </section>
   <!-- GALLERY_REGION_END -->
+
+  <span class="page-rule"></span>
+
+  <section class="section">
+    <div class="wrap">
+      <p style="font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:1.25rem;">Canvas sizes</p>
+      <table class="sizes-table" style="margin-bottom:2.5rem;">
+        <thead>
+          <tr><th>Format</th><th>Dimensions</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Small</td><td>40 × 50&thinsp;cm&emsp;(16 × 20&thinsp;in)</td><td>From $1,000</td></tr>
+          <tr><td>Medium</td><td>60 × 80&thinsp;cm&emsp;(24 × 31&thinsp;in)</td><td>From $1,500</td></tr>
+          <tr><td>Large</td><td>80 × 100&thinsp;cm&emsp;(31 × 39&thinsp;in)</td><td>From $2,000</td></tr>
+          <tr><td>Extra large</td><td>100 × 120&thinsp;cm&emsp;(39 × 47&thinsp;in) and above</td><td>From $3,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <span class="page-rule"></span>
 

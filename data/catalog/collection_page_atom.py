@@ -160,6 +160,30 @@ _CSS = """\
     .commission-cta p { font-size: .9375rem; color: var(--muted-light); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
     .commission-cta .pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
+    /* ── SIZES TABLE ─────────────────────────────────────────────────────────── */
+    .sizes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+    }
+    .sizes-table th, .sizes-table td {
+      padding: .875rem 1rem;
+      border: 1px solid var(--rule);
+      text-align: left;
+    }
+    .sizes-table th {
+      font-weight: 600;
+      font-size: .6875rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+      background: var(--band);
+    }
+    .sizes-table td:last-child {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1rem;
+    }
+
     /* ── FOOTER ──────────────────────────────────────────────────────────────── */
     .site-footer {
       border-top: 1px solid var(--rule);
@@ -201,6 +225,42 @@ _CSS = """\
 
 
 # ── Pure helpers ─────────────────────────────────────────────────────────────
+
+def _build_size_table(size_ladder: list) -> str:
+    """PURE: build HTML sizes table with both cm and in units from size_ladder data.
+
+    Format: 'N × N cm (N × N in)' — never hand-typed, always data-driven.
+    """
+    if not size_ladder:
+        return ""
+    rows = ""
+    for row in size_ladder:
+        label = _esc(row["label"])
+        cm = _esc(row["cm"])
+        inches = _esc(row["in"])
+        suffix = _esc(row.get("suffix", ""))
+        price = _esc(row.get("price", ""))
+        rows += (
+            f"          <tr>"
+            f"<td>{label}</td>"
+            f"<td>{cm}&thinsp;cm&emsp;({inches}&thinsp;in){suffix}</td>"
+            f"<td>{price}</td>"
+            f"</tr>\n"
+        )
+    return (
+        "      <p style=\"font-size:.6875rem;letter-spacing:.14em;"
+        "text-transform:uppercase;color:var(--muted-dark);"
+        "margin-bottom:1.25rem;\">Canvas sizes</p>\n"
+        "      <table class=\"sizes-table\" style=\"margin-bottom:2.5rem;\">\n"
+        "        <thead>\n"
+        "          <tr><th>Format</th><th>Dimensions</th><th>Price</th></tr>\n"
+        "        </thead>\n"
+        "        <tbody>\n"
+        f"{rows}"
+        "        </tbody>\n"
+        "      </table>"
+    )
+
 
 def _stem_location(stem: str, place_notes: dict) -> str:
     """PURE: return display location string from _place_notes (before ' — '), or ''."""
@@ -255,16 +315,15 @@ def _compose_page(
     description: str,
     schema_desc: str,
     commission_cta: bool,
+    size_ladder: list | None = None,
 ) -> str:
-    """PURE: compose complete collection page HTML.
-
-    No prices rendered. No I/O. Returns the full HTML string.
-    """
+    """PURE: compose complete collection page HTML. Returns the full HTML string."""
     coll_number = f"Collection {position:02d}"
     safe_title = _esc(title)
     page_title = f"{safe_title} — Ivy Wolf Art | Expressionist Paintings"
     og_image = f"https://ivy-wolf.com/assets/photo-library/{hero_stem}-1200w.jpg"
     figures_html = _build_figures(place_stems, place_notes)
+    size_table_html = _build_size_table(size_ladder or [])
 
     schema = (
         "{\n"
@@ -370,6 +429,14 @@ def _compose_page(
 
   <span class="page-rule"></span>
 
+  <section class="section">
+    <div class="wrap">
+{size_table_html}
+    </div>
+  </section>
+
+  <span class="page-rule"></span>
+
 {commission_html}  <footer class="site-footer">
     <p class="footer-legal">&copy; 2026 Ivy Wolf Art &middot; a brand of Wolf Co. &middot; <a href="/contact">Contact</a></p>
     <p class="footer-credit">Built by Uplift Technology Services, LLC</p>
@@ -443,6 +510,7 @@ def emit_page(
     place_stems = coll.get("place_image_stems", [])
     place_notes = coll.get("_place_notes", {})
     commission_cta = coll.get("commission_cta", True)
+    size_ladder = raw_catalog.get("size_ladder", [])
     description = (
         f"Original expressionist paintings. "
         f"Every work is singular — painted once and never reproduced."
@@ -461,6 +529,7 @@ def emit_page(
         description=description,
         schema_desc=schema_desc,
         commission_cta=commission_cta,
+        size_ladder=size_ladder,
     )
 
     if not dry_run:

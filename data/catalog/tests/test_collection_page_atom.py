@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import pytest
 from collection_page_atom import (
     _build_figures,
+    _build_size_table,
     _compose_page,
     _stem_location,
     emit_page,
@@ -130,7 +131,8 @@ def test_compose_page_collection_number():
     assert "Collection 03" in html
 
 
-def test_compose_page_no_price():
+def test_compose_page_no_price_without_ladder():
+    # _compose_page with no size_ladder must not emit any price
     html = _compose_page(
         slug="test-place",
         title="Test Place",
@@ -145,6 +147,46 @@ def test_compose_page_no_price():
     assert "$" not in html
     assert "HELD" not in html
     assert "prices-table" not in html
+
+
+def test_build_size_table_renders_both_units():
+    ladder = [
+        {"label": "Medium", "cm": "60 × 80", "in": "24 × 31", "price": "From $1,500"},
+        {"label": "Large", "cm": "80 × 100", "in": "31 × 39", "price": "From $2,000"},
+    ]
+    html = _build_size_table(ladder)
+    assert "60 × 80" in html
+    assert "24 × 31" in html
+    assert "cm" in html
+    assert "in)" in html
+    assert "From $1,500" in html
+    assert "From $2,000" in html
+    assert "sizes-table" in html
+
+
+def test_build_size_table_empty_returns_empty():
+    assert _build_size_table([]) == ""
+
+
+def test_compose_page_with_ladder_shows_both_units():
+    ladder = [{"label": "Medium", "cm": "60 × 80", "in": "24 × 31", "price": "From $1,500"}]
+    html = _compose_page(
+        slug="test-place",
+        title="Test Place",
+        position=1,
+        hero_stem="img-0001",
+        place_stems=["img-0001"],
+        place_notes={},
+        description="Desc.",
+        schema_desc="Schema.",
+        commission_cta=True,
+        size_ladder=ladder,
+    )
+    assert "60 × 80" in html
+    assert "24 × 31" in html
+    assert "in)" in html
+    assert "From $1,500" in html
+    assert "sizes-table" in html
 
 
 def test_compose_page_credit_wolf_life():
@@ -392,9 +434,10 @@ def test_emit_page_the_bahamas_integration():
     assert "The Bahamas" in html
     assert "The Wolf Life" in html
     assert "A limited collection" in html
-    assert "$" not in html
     assert "HELD" not in html
     assert "Collection 02" in html
+    assert "sizes-table" in html
+    assert "in)" in html
 
 
 def test_emit_page_laguna_integration():
@@ -407,11 +450,11 @@ def test_emit_page_laguna_integration():
 
 def test_emit_page_mind_body_spirit_integration():
     html = emit_page(slug="mind-body-spirit", dry_run=True)
-    # catalog title is "Mind, Body & Spirit" — HTML-encoded in the page
     assert "Mind, Body" in html
     assert "Spirit" in html
     assert "Collection 07" in html
     assert "The Wolf Life" in html
-    # commission_cta not set in catalog — defaults True (MBS is also commissioned art BLG-02)
     assert 'class="commission-cta"' in html
-    assert "$" not in html
+    assert "HELD" not in html
+    assert "sizes-table" in html
+    assert "in)" in html

@@ -164,5 +164,33 @@
       "_note": "PIC 2026-09-29: MBS is a collection AND commissioned art. Blog BLG-02. Light frame (not the blue)."
     }
   ],
-  "_austin_note": "Austin, Texas IS a collection (PIC 2026-09-29 corrected an earlier wrong dissolution). Only the Cotton Bowl PAINTING (img-7086) is commissioned art (BLG-01) — the place-collection stands with its aerials."
+  "_austin_note": "Austin, Texas IS a collection (PIC 2026-09-29 corrected an earlier wrong dissolution). Only the Cotton Bowl PAINTING (img-7086) is commissioned art (BLG-01) — the place-collection stands with its aerials.",
+  "size_ladder": [
+    {
+      "label": "Small",
+      "cm": "40 × 50",
+      "in": "16 × 20",
+      "price": "From $1,000",
+      "_note": "FLAG 2026-09-30: Director stated offering floor is 60×80 cm; Small is below floor. Carried pending Director call."
+    },
+    {
+      "label": "Medium",
+      "cm": "60 × 80",
+      "in": "24 × 31",
+      "price": "From $1,500"
+    },
+    {
+      "label": "Large",
+      "cm": "80 × 100",
+      "in": "31 × 39",
+      "price": "From $2,000"
+    },
+    {
+      "label": "Extra large",
+      "cm": "100 × 120",
+      "in": "39 × 47",
+      "suffix": " and above",
+      "price": "From $3,000"
+    }
+  ]
 }

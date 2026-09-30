@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedona, Arizona — Ivy Wolf Art</title>
+  <title>Sedona, Arizona — Ivy Wolf Art | Expressionist Paintings</title>
   <meta name="description" content="The Sedona, Arizona collection — original expressionist paintings by Ivy Wolf.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     :root {
       --ink:         #111111;
       --paper:       #FFFFFF;
-      --accent:      #7C5CFF;  /* small accent only — never buttons, never prices */
+      --accent:      #7C5CFF;  /* small accent only — never on buttons */
       --muted-dark:  #757575;
       --muted-light: #555555;
       --band:        #F1F1F1;
@@ -127,132 +127,6 @@
       padding: clamp(64px, 9vw, 118px) var(--gutter);
     }
 
-    /* ── GRID ────────────────────────────────────────────────────────────────── */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      border: 1px solid var(--rule);
-      padding: 2rem;
-    }
-    .card .card-eyebrow {
-      font-size: .6875rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: .75rem;
-    }
-    .card h3 {
-      font-size: 1.375rem;
-      margin-bottom: .75rem;
-    }
-    .card p {
-      font-size: .875rem;
-      color: var(--muted-light);
-      line-height: 1.65;
-      margin-bottom: 1.25rem;
-    }
-    .card .card-link {
-      font-size: .8125rem;
-      font-weight: 500;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--muted-light);
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: .25rem;
-    }
-    .card .card-link:hover { color: var(--ink); border-color: var(--ink); }
-
-    /* ── COMING SOON card ────────────────────────────────────────────────────── */
-    .card.coming-soon { opacity: .6; }
-
-    /* ── PLACEHOLDER tile ────────────────────────────────────────────────────── */
-    .placeholder-tile {
-      width: 100%;
-      padding-top: 65%;
-      background: var(--band);
-      border: 1px solid var(--rule);
-      position: relative;
-      margin-bottom: 1.5rem;
-    }
-    .placeholder-tile-label {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .75rem;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-    }
-
-    /* ── PLATE (collection teaser row) ──────────────────────────────────────── */
-    .plate {
-      display: grid;
-      grid-template-columns: 1.55fr 1fr;
-      gap: 3rem;
-      align-items: center;
-      margin-bottom: 4rem;
-      padding-bottom: 4rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .plate.reverse { grid-template-columns: 1fr 1.55fr; }
-    .plate.reverse .plate-img { order: 2; }
-    .plate.reverse .plate-body { order: 1; }
-    .plate-img img, .plate-img .plate-placeholder {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      filter: grayscale(1) contrast(1.06);
-      background: var(--band);
-    }
-    .plate-placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .75rem;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-      border: 1px solid var(--rule);
-    }
-    .plate-eyebrow {
-      font-size: .6875rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: .75rem;
-    }
-    .plate-title { font-size: 1.5rem; margin-bottom: .75rem; }
-    .plate-desc { font-size: .9375rem; line-height: 1.65; color: var(--muted-light); margin-bottom: 1.5rem; }
-
-    /* ── PRICES TABLE ─────────────────────────────────────────────────────────── */
-    .prices-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: .875rem;
-    }
-    .prices-table th, .prices-table td {
-      padding: .875rem 1rem;
-      border: 1px solid var(--rule);
-      text-align: left;
-    }
-    .prices-table th {
-      font-weight: 600;
-      font-size: .6875rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--muted-light);
-      background: var(--band);
-    }
-    .prices-table td:last-child {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: 1rem;
-    }
-
     /* ── COMMISSION CTA ───────────────────────────────────────────────────────── */
     .commission-cta {
       text-align: center;
@@ -263,99 +137,29 @@
     .commission-cta p { font-size: .9375rem; color: var(--muted-light); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
     .commission-cta .pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-    /* ── BLOG POST LIST ───────────────────────────────────────────────────────── */
-    .post-list { list-style: none; }
-    .post-list li {
-      display: flex;
-      gap: 2rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--rule);
-      align-items: baseline;
-    }
-    .post-date {
-      font-size: .75rem;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--muted-dark);
-      min-width: 90px;
-    }
-    .post-title { font-size: 1rem; font-weight: 500; margin-bottom: .25rem; }
-    .post-summary { font-size: .875rem; color: var(--muted-light); line-height: 1.6; }
-    .post-list li a:hover .post-title { color: var(--muted-dark); }
-
-    /* ── BLOG POST BODY ───────────────────────────────────────────────────────── */
-    .post-head { padding: clamp(48px, 7vw, 96px) var(--gutter) 2rem; max-width: 680px; margin: 0 auto; }
-    .post-head .post-meta { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-dark); margin-bottom: 1rem; }
-    .post-head h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.15; margin-bottom: 1.25rem; }
-    .post-head .lede { font-size: 1.0625rem; line-height: 1.7; color: var(--muted-light); }
-    .post-body { max-width: 680px; margin: 0 auto; padding: 3rem var(--gutter) clamp(64px, 9vw, 118px); }
-    .post-body p { font-size: 1rem; line-height: 1.8; color: var(--muted-light); margin-bottom: 1.5rem; }
-    .post-body h2 { font-size: 1.375rem; margin: 2rem 0 .75rem; }
-
-    /* ── ABOUT SPLIT ─────────────────────────────────────────────────────────── */
-    .about-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-      padding: clamp(64px, 9vw, 118px) var(--gutter);
-      max-width: var(--wrap);
-      margin: 0 auto;
-    }
-    .about-portrait { background: var(--band); aspect-ratio: 3/4; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted-dark); }
-    .about-text h2 { font-size: clamp(1.375rem, 3vw, 2rem); margin-bottom: 1.5rem; line-height: 1.2; }
-    .about-text p { font-size: .9375rem; line-height: 1.75; color: var(--muted-light); margin-bottom: 1.25rem; }
-    .pullquote {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-style: italic;
-      font-size: 1.25rem;
-      line-height: 1.55;
-      color: var(--ink);
-      border-left: 2px solid var(--ink);
-      padding: .75rem 0 .75rem 1.5rem;
-      margin: 2rem 0;
-    }
-
-    /* ── FORM ────────────────────────────────────────────────────────────────── */
-    .lead-form { max-width: 540px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) var(--gutter); }
-    .form-field { margin-bottom: 1.5rem; }
-    .form-field label { display: block; font-size: .75rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-light); margin-bottom: .5rem; }
-    .form-field input, .form-field textarea {
+    /* ── SIZES TABLE ─────────────────────────────────────────────────────────── */
+    .sizes-table {
       width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+    }
+    .sizes-table th, .sizes-table td {
       padding: .875rem 1rem;
       border: 1px solid var(--rule);
-      background: var(--paper);
-      font-family: inherit;
-      font-size: .9375rem;
-      color: var(--ink);
+      text-align: left;
     }
-    .form-field input:focus, .form-field textarea:focus {
-      outline: none;
-      border-color: var(--ink);
+    .sizes-table th {
+      font-weight: 600;
+      font-size: .6875rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+      background: var(--band);
     }
-    .form-field textarea { resize: vertical; min-height: 140px; }
-
-    /* ── DARK PAGE (shop) ────────────────────────────────────────────────────── */
-    .dark-hold {
-      text-align: center;
-      padding: clamp(80px, 12vw, 160px) var(--gutter);
+    .sizes-table td:last-child {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1rem;
     }
-    .dark-hold .eyebrow { font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-dark); margin-bottom: 1.5rem; }
-    .dark-hold h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: 1.25rem; }
-    .dark-hold p { font-size: .9375rem; color: var(--muted-light); max-width: 420px; margin: 0 auto 2rem; line-height: 1.7; }
-
-    /* ── THANK YOU ───────────────────────────────────────────────────────────── */
-    .confirmation {
-      text-align: center;
-      padding: clamp(80px, 12vw, 160px) var(--gutter);
-    }
-    .confirmation h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: 1.25rem; }
-    .confirmation p { font-size: .9375rem; color: var(--muted-light); max-width: 420px; margin: 0 auto 2rem; line-height: 1.7; }
-
-    /* ── LEGAL ───────────────────────────────────────────────────────────────── */
-    .legal-body { max-width: 680px; margin: 0 auto; padding: 3rem var(--gutter) clamp(64px, 9vw, 118px); }
-    .legal-body h2 { font-size: 1.125rem; font-weight: 600; margin: 2rem 0 .75rem; }
-    .legal-body p { font-size: .875rem; line-height: 1.75; color: var(--muted-light); margin-bottom: 1rem; }
 
     /* ── FOOTER ──────────────────────────────────────────────────────────────── */
     .site-footer {
@@ -393,9 +197,6 @@
         font-size: .8125rem; color: var(--muted-light);
       }
       .nav-menu-panel a:hover { color: var(--ink); }
-      .plate, .plate.reverse { grid-template-columns: 1fr; }
-      .plate.reverse .plate-img, .plate.reverse .plate-body { order: unset; }
-      .about-split { grid-template-columns: 1fr; }
       .site-footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -404,14 +205,14 @@
   <link rel="canonical" href="https://ivy-wolf.com/collections/sedona-arizona">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ivy-wolf.com/collections/sedona-arizona">
-  <meta property="og:title" content="Sedona, Arizona — Ivy Wolf Art">
+  <meta property="og:title" content="Sedona, Arizona — Ivy Wolf Art | Expressionist Paintings">
   <meta property="og:description" content="The Sedona, Arizona collection — original expressionist paintings by Ivy Wolf.">
   <meta property="og:image" content="https://ivy-wolf.com/assets/photo-library/img-3216-1200w.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="800">
   <meta property="og:site_name" content="Ivy Wolf Art">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sedona, Arizona — Ivy Wolf Art">
+  <meta name="twitter:title" content="Sedona, Arizona — Ivy Wolf Art | Expressionist Paintings">
   <meta name="twitter:description" content="The Sedona, Arizona collection — original expressionist paintings by Ivy Wolf.">
   <meta name="twitter:image" content="https://ivy-wolf.com/assets/photo-library/img-3216-1200w.jpg">
   <script type="application/ld+json">
@@ -461,14 +262,81 @@
   <!-- GALLERY_REGION_START -->
   <section class="section">
     <div class="wrap">
-      <figure style="margin:0;">
+      <figure style="margin:0 0 3rem;">
         <img src="/assets/photo-library/img-3216-800w.jpg"
              srcset="/assets/photo-library/img-3216-400w.jpg 400w, /assets/photo-library/img-3216-800w.jpg 800w, /assets/photo-library/img-3216-1200w.jpg 1200w, /assets/photo-library/img-3216-1600w.jpg 1600w"
              sizes="(max-width:768px) 100vw, 1120px"
-             alt="Rainbow over the red rock, Sedona, Arizona"
-             style="aspect-ratio:3/2;object-fit:cover;">
+             alt="Sedona, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
         <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
-          Rainbow over the red rock, Sedona, Arizona &middot; The Wolf Life
+          Sedona, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-4112-800w.jpg"
+             srcset="/assets/photo-library/img-4112-400w.jpg 400w, /assets/photo-library/img-4112-800w.jpg 800w, /assets/photo-library/img-4112-1200w.jpg 1200w, /assets/photo-library/img-4112-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Between Sedona and Scottsdale, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Between Sedona and Scottsdale, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-4114-800w.jpg"
+             srcset="/assets/photo-library/img-4114-400w.jpg 400w, /assets/photo-library/img-4114-800w.jpg 800w, /assets/photo-library/img-4114-1200w.jpg 1200w, /assets/photo-library/img-4114-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Between Sedona and Scottsdale, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Between Sedona and Scottsdale, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-4115-800w.jpg"
+             srcset="/assets/photo-library/img-4115-400w.jpg 400w, /assets/photo-library/img-4115-800w.jpg 800w, /assets/photo-library/img-4115-1200w.jpg 1200w, /assets/photo-library/img-4115-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Between Sedona and Scottsdale, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Between Sedona and Scottsdale, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-5440-800w.jpg"
+             srcset="/assets/photo-library/img-5440-400w.jpg 400w, /assets/photo-library/img-5440-800w.jpg 800w, /assets/photo-library/img-5440-1200w.jpg 1200w, /assets/photo-library/img-5440-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Sedona, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Sedona, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-4275-800w.jpg"
+             srcset="/assets/photo-library/img-4275-400w.jpg 400w, /assets/photo-library/img-4275-800w.jpg 800w, /assets/photo-library/img-4275-1200w.jpg 1200w, /assets/photo-library/img-4275-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Over the skies between Scottsdale and Sedona, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Over the skies between Scottsdale and Sedona, Arizona &middot; The Wolf Life
+        </figcaption>
+      </figure>
+      <figure style="margin:0 0 3rem;">
+        <img src="/assets/photo-library/img-8767-800w.jpg"
+             srcset="/assets/photo-library/img-8767-400w.jpg 400w, /assets/photo-library/img-8767-800w.jpg 800w, /assets/photo-library/img-8767-1200w.jpg 1200w, /assets/photo-library/img-8767-1600w.jpg 1600w"
+             sizes="(max-width:768px) 100vw, 1120px"
+             alt="Over Sedona, Arizona"
+             loading="lazy"
+             style="aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);margin-top:1rem;">
+          Over Sedona, Arizona &middot; The Wolf Life
         </figcaption>
       </figure>
       <p style="font-size:.9375rem;line-height:1.7;color:var(--muted-light);max-width:540px;margin-top:2rem;">
@@ -480,27 +348,24 @@
 
   <span class="page-rule"></span>
 
-  <!-- PRICES TABLE -->
-  <section class="section" style="background:var(--band);">
+  <section class="section">
     <div class="wrap">
-      <p style="font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:1.25rem;">Pricing</p>
-      <h2 class="display" style="font-size:1.75rem;margin-bottom:2rem;">$1,000 — $3,000</h2>
-      <table class="prices-table">
+      <p style="font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:1.25rem;">Canvas sizes</p>
+      <table class="sizes-table" style="margin-bottom:2.5rem;">
         <thead>
           <tr><th>Format</th><th>Dimensions</th><th>Price</th></tr>
         </thead>
         <tbody>
-          <tr><td>Small</td><td>Up to 40 × 50 cm</td><td>From $1,000</td></tr>
-          <tr><td>Medium</td><td>60 × 80 cm</td><td>From $1,500</td></tr>
-          <tr><td>Large</td><td>80 × 100 cm</td><td>From $2,000</td></tr>
-          <tr><td>Extra large</td><td>100 × 120 cm and above</td><td>From $3,000</td></tr>
+          <tr><td>Small</td><td>40 × 50&thinsp;cm&emsp;(16 × 20&thinsp;in)</td><td>From $1,000</td></tr>
+          <tr><td>Medium</td><td>60 × 80&thinsp;cm&emsp;(24 × 31&thinsp;in)</td><td>From $1,500</td></tr>
+          <tr><td>Large</td><td>80 × 100&thinsp;cm&emsp;(31 × 39&thinsp;in)</td><td>From $2,000</td></tr>
+          <tr><td>Extra large</td><td>100 × 120&thinsp;cm&emsp;(39 × 47&thinsp;in) and above</td><td>From $3,000</td></tr>
         </tbody>
       </table>
-      <p style="font-size:.75rem;color:var(--muted-dark);margin-top:1.25rem;">
-        Prices are per original painting. Commission pricing follows the same scale. Materials and finishing surcharges may apply.
-      </p>
     </div>
   </section>
+
+  <span class="page-rule"></span>
 
   <div class="commission-cta">
     <h2 class="display">Commission a work from this collection</h2>
